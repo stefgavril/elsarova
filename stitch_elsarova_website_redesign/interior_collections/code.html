@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ELSAROVA | Interior Lighting Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#93000a",
+                    "on-secondary-fixed": "#1a1b20",
+                    "inverse-surface": "#fddbd7",
+                    "surface-container-lowest": "#1a0a08",
+                    "signature-red": "#E31E24",
+                    "onyx-base": "#121317",
+                    "primary": "#ffb4ab",
+                    "onyx-surface": "#1C1D21",
+                    "on-error-container": "#ffdad6",
+                    "surface-container-high": "#392523",
+                    "on-tertiary-container": "#fbfcff",
+                    "surface": "#200f0d",
+                    "on-primary-container": "#fffafa",
+                    "surface-bright": "#493431",
+                    "tertiary-fixed-dim": "#8ecdff",
+                    "on-surface-variant": "#e7bdb8",
+                    "on-tertiary-fixed": "#001e30",
+                    "secondary": "#c7c6cb",
+                    "secondary-fixed-dim": "#c7c6cb",
+                    "muted-gray": "#808080",
+                    "on-tertiary-fixed-variant": "#004b71",
+                    "on-primary-fixed": "#410002",
+                    "surface-tint": "#ffb4ab",
+                    "crisp-white": "#FFFFFF",
+                    "surface-dim": "#200f0d",
+                    "primary-fixed": "#ffdad6",
+                    "on-primary": "#690006",
+                    "on-surface": "#fddbd7",
+                    "on-secondary-fixed-variant": "#46464b",
+                    "secondary-container": "#46464b",
+                    "tertiary": "#8ecdff",
+                    "surface-variant": "#45302d",
+                    "surface-container-low": "#291715",
+                    "on-error": "#690005",
+                    "outline": "#ae8883",
+                    "primary-container": "#e31e24",
+                    "inverse-on-surface": "#402b29",
+                    "background": "#200f0d",
+                    "on-secondary-container": "#b5b4ba",
+                    "inverse-primary": "#c00014",
+                    "on-primary-fixed-variant": "#93000d",
+                    "outline-variant": "#5d3f3c",
+                    "on-tertiary": "#00344f",
+                    "tertiary-container": "#007bb5",
+                    "on-secondary": "#2f3035",
+                    "surface-container": "#2d1b19",
+                    "tertiary-fixed": "#cbe6ff",
+                    "secondary-fixed": "#e3e2e7",
+                    "primary-fixed-dim": "#ffb4ab",
+                    "error": "#ffb4ab",
+                    "on-background": "#fddbd7",
+                    "surface-container-highest": "#45302d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "160px",
+                    "margin-mobile": "20px",
+                    "gutter": "32px",
+                    "unit": "8px",
+                    "container-max": "1440px",
+                    "margin-desktop": "64px",
+                    "margin-tablet": "32px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Manrope"],
+                    "display-lg": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "headline-md": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "headline-lg-mobile": ["Manrope"],
+                    "label-caps": ["Manrope"]
+            },
+            "fontSize": {
+                    "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #121317; /* onyx-base */
+            color: #FFFFFF; /* crisp-white */
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-shadow-luxe {
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        .glass-header {
+            background: rgba(32, 15, 13, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="font-body-md antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 border-b border-crisp-white/10 glass-header">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold tracking-tighter text-crisp-white">ELSAROVA</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-signature-red border-b border-signature-red pb-1 font-label-caps transition-all active:opacity-80 active:scale-95" href="#">Interior</a>
+<a class="text-crisp-white font-label-caps hover:text-signature-red transition-colors duration-300 active:opacity-80 active:scale-95" href="#">Exterior</a>
+<a class="text-crisp-white font-label-caps hover:text-signature-red transition-colors duration-300 active:opacity-80 active:scale-95" href="#">About</a>
+</div>
+<button class="bg-crisp-white text-onyx-base px-6 py-2 font-label-caps transition-all hover:bg-signature-red hover:text-crisp-white active:scale-95">
+                Contact Us
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-[80vh] flex items-center pt-24">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-gradient-to-r from-onyx-base via-onyx-base/80 to-transparent absolute z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A sophisticated close-up of a modern geometric lighting fixture in a dark, atmospheric room. The deep charcoal background creates a high-contrast environment where the warm glow of the internal filament reflects off the sharp metallic edges. The overall mood is luxurious, industrial, and artistic, emphasizing precision and the interplay of light and shadow in a premium interior space." src="https://lh3.googleusercontent.com/aida/ADBb0ujh4N393UWiGrQWj2yXlEQ14I-X9fciGob3SuUHrBe_bEGyjnkjI25i3P_i4WJHf4y0vjnUIICQegQAQ8ZlAjClBru_6oG07Oo8buCsHqfZS_Q0zhiX6sP0PNVpmHDtR8PmyIEBL48tPNzkrsbX2PaFuA2bbTtYCn09F7pC2a7ozWhIzZ3istTyOToITDeoXJZi_LDhxfcPCZQqcR2ytKU2V6FpzWhbKfUBV2JJ1JhzsaDHu32AQxGEfgJR"/>
+</div>
+<div class="relative z-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="max-w-3xl">
+<span class="font-label-caps text-signature-red tracking-widest mb-4 block">EXQUISITE ILLUMINATION</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-crisp-white mb-8 leading-tight">THE ART OF THE INTERIOR</h1>
+<p class="font-body-lg text-muted-gray max-w-xl mb-12">
+                    Discover a collection where industrial precision meets cinematic elegance. Every fixture is a dialogue between raw structural integrity and the ethereal quality of light.
+                </p>
+<div class="flex gap-6">
+<button class="bg-signature-red text-crisp-white px-8 py-4 font-label-caps tracking-widest hover:brightness-110 transition-all">VIEW COLLECTION</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Gallery Section -->
+<main class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-24">
+<h2 class="font-headline-lg text-crisp-white mb-4 md:mb-0">CURATED SELECTION</h2>
+<p class="font-label-caps text-muted-gray border-l border-signature-red pl-6 py-2">MODERN ARCHITECTURAL FORMS</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Focus Image -->
+<div class="md:col-span-8 group cursor-crosshair overflow-hidden">
+<div class="relative overflow-hidden aspect-[16/9]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A high-end glass chandelier fixture captured in an architectural setting with dramatic spotlighting. The dark, minimalist surroundings accentuate the crystalline details of the lighting solution, creating a visual narrative of luxury and nocturnal sophistication. Deep shadows and razor-sharp highlights emphasize the industrial luxe brand identity, turning the functional object into a piece of fine art." src="https://lh3.googleusercontent.com/aida/ADBb0uh-HosT8HlmhFZu0bHnHNWUhQZwOZGq3EVjX8b0QprYyto09BXseIWzG-8ekP04LfpZUQ9CRc3VuJxuKuXkZILLtDvUdNTbpXvN-0J4o3J3oyAkmAQEtEDeNMQY4vgMt4xfxkt02xekwTarh0irne6suWlrgV_gH-a69Ckf2RMvOahYMtGp6bi8c15zVWz2SNo1ANkXDxIT3b31qMa56IvhIlCtXk5Lvi1wrdSLw5wTESgeO00mIn2GmPDl"/>
+<div class="absolute bottom-8 left-8">
+<span class="font-label-caps text-crisp-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-onyx-base/50 backdrop-blur-md px-4 py-2">ERSEKA GLASS SERIES</span>
+</div>
+</div>
+<div class="mt-8">
+<h3 class="font-headline-md text-crisp-white group-hover:text-signature-red transition-colors">Crystalline Structure</h3>
+<p class="font-body-md text-muted-gray mt-4 max-w-md">Precision-cut glass elements that refract light into complex architectural patterns, creating a sense of depth and volume in open spaces.</p>
+</div>
+</div>
+<!-- Side Secondary Image -->
+<div class="md:col-span-4 group cursor-crosshair self-end">
+<div class="relative overflow-hidden aspect-square border border-crisp-white/10 p-4">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A minimalist pendant light hanging in a stark, modern room. The lighting is low-key and moody, focusing on the silhouette of the fixture against a dark, textured wall. The industrial aesthetic is highlighted by the clean lines and solid construction of the lamp, evoking a sense of exclusivity and high-end design for discerning homeowners and architects." src="https://lh3.googleusercontent.com/aida/ADBb0uildLrOhXTxYu9lnOuJevg4YS99mltHLbM2c2YX-gQ4LH9b3XURQmylJoFeyGQUHY4fWdetfA2cLEka_gPsMvr7zzS0RPcn7NSOJfYFdDO5AyrThgcQl29X4LnfeqfdVf2N084Spx4iKyTB5rJWPxCxIzj_zMR6OTo50cGuoibVNh8NzsX7hd00zHkbaWYEqYmL76H6fS3Aqfr6rzyxdMkSdiRT3z5ZdDyRjPMf0mjxO25Zh-q6wZWAEytV"/>
+<div class="absolute bottom-8 left-8">
+<span class="font-label-caps text-crisp-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-signature-red px-4 py-2">ENCINITOS SERIES</span>
+</div>
+</div>
+<div class="mt-8">
+<h3 class="font-headline-md text-crisp-white group-hover:text-signature-red transition-colors">Minimalist Void</h3>
+<p class="font-body-md text-muted-gray mt-4">A study in negative space. The Encinitos series provides focused illumination with a footprint that disappears into the darkness.</p>
+</div>
+</div>
+<!-- Lower Secondary Image -->
+<div class="md:col-span-4 group cursor-crosshair mt-12 md:mt-24">
+<div class="relative overflow-hidden aspect-[3/4]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A ceiling-mounted lighting fixture with a geometric cage design, showcasing the industrial lux style. The shot is taken from a low angle looking up, highlighting the structural strength and high-contrast edges of the product. The lighting is warm and inviting yet keeps the surrounding area in a deep, elegant shadow, reinforcing the nocturnal sophistication of the brand." src="https://lh3.googleusercontent.com/aida/ADBb0uhi9rVtRqDyVkM72L2pqmGd9uhfg8Ycb-IAjM1J5-vWkixtHuihifVofuMuJYRNF7QpM4-FHIfD3PBJb62A9j3fAVPsXubjUrS4sD5qwQo63FYuVG08Yor2rXT6fNkuxTZVkNvGWM8_rYs2_IzMMo3sXtcCnPTjTzvXujDFN9a6T5XEZel_E94M-SvaLbSWwQuZksJirZyVfihxsTX6exiAInl442K2pm3RjP1AS3ilm3FsJdkGOy3ON4Vk"/>
+<div class="absolute top-8 right-8">
+<span class="font-label-caps text-crisp-white bg-onyx-surface border border-crisp-white/20 px-4 py-2">LIBERTAD CEILING</span>
+</div>
+</div>
+<div class="mt-8">
+<h3 class="font-headline-md text-crisp-white group-hover:text-signature-red transition-colors">Structural Rhythm</h3>
+<p class="font-body-md text-muted-gray mt-4">Repetitive geometric frames that cast rhythmic shadows across ceiling surfaces, transforming utility into a visual performance.</p>
+</div>
+</div>
+<!-- Bottom Call to Action Text -->
+<div class="md:col-span-8 flex items-center justify-center mt-12 md:mt-24 border border-signature-red p-12 relative overflow-hidden group">
+<div class="absolute inset-0 bg-signature-red opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
+<div class="text-center z-10">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg text-crisp-white mb-6 uppercase tracking-tighter">Define Your Atmosphere</h2>
+<p class="font-body-lg text-muted-gray mb-10 max-w-2xl mx-auto italic">"Lighting is the final brushstroke of the architect. It doesn't just show the room; it tells the room's story."</p>
+<button class="border-2 border-crisp-white text-crisp-white px-12 py-4 font-label-caps tracking-[0.2em] hover:bg-signature-red hover:border-signature-red transition-all active:scale-95">REQUEST CATALOGUE</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Towing Section (Industrial Strength) -->
+<section class="w-full relative py-section-gap overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-onyx-base/80 z-10"></div>
+<div class="w-full h-full bg-[url('https://images.unsplash.com/photo-1619451427882-6aaaded0cc61?q=80&amp;w=2000&amp;auto=format&amp;fit=crop')] bg-cover bg-center grayscale contrast-125"></div>
+</div>
+<div class="relative z-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-crisp-white mb-4">TOWING &amp; RECOVERY</h2>
+<p class="font-label-caps text-signature-red mb-12 tracking-[0.3em]">INDUSTRIAL PRECISION BEYOND LIGHTING</p>
+<a class="inline-block bg-signature-red text-crisp-white px-12 py-6 font-display-lg text-headline-md hover:bg-crisp-white hover:text-onyx-base transition-all duration-300 transform hover:skew-x-2" href="https://tractari.elsarova.ro">
+                tractari.elsarova.ro
+            </a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-onyx-surface border-t border-crisp-white/10 py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div>
+<div class="font-headline-md text-headline-md text-crisp-white mb-8">ELSAROVA</div>
+<p class="font-body-md text-muted-gray max-w-xs">Crafting nocturnal atmospheres through industrial precision and luxury design. European lighting excellence.</p>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-caps text-crisp-white mb-4">COLLECTIONS</span>
+<a class="text-muted-gray font-label-caps hover:text-crisp-white transition-colors" href="#">Interior</a>
+<a class="text-muted-gray font-label-caps hover:text-crisp-white transition-colors" href="#">Exterior</a>
+<a class="text-muted-gray font-label-caps hover:text-crisp-white transition-colors" href="#">About</a>
+<a class="text-muted-gray font-label-caps hover:text-crisp-white transition-colors" href="#">TOWING &amp; RECOVERY</a>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-crisp-white mb-8">NEWSLETTER</span>
+<div class="relative">
+<input class="w-full bg-transparent border-b border-crisp-white/30 py-4 font-label-caps text-crisp-white focus:outline-none focus:border-signature-red transition-colors placeholder:text-muted-gray/50" placeholder="YOUR EMAIL ADDRESS" type="email"/>
+<button class="absolute right-0 bottom-4 text-signature-red hover:text-crisp-white transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="mt-12">
+<p class="text-[10px] font-label-caps text-muted-gray">© 2024 ELSAROVA LIGHTING. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions for gallery hover
+        document.querySelectorAll('.group').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                // Potential for custom cursor or sound effect
+            });
+        });
+
+        // Simple scroll reveal
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('main > div, main > div > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

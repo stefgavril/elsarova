@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Interior Lighting Portfolio | ElsaRova</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-tertiary-fixed": "#261900",
+                "surface-dim": "#121317",
+                "tertiary-fixed": "#ffdea5",
+                "error-container": "#93000a",
+                "secondary": "#9acbff",
+                "outline-variant": "#5d3f3c",
+                "on-tertiary-container": "#fffaf9",
+                "surface-container-low": "#1a1b20",
+                "on-error": "#690005",
+                "primary-container": "#e31e24",
+                "inverse-on-surface": "#2f3035",
+                "inverse-surface": "#e3e2e8",
+                "secondary-container": "#3a96e2",
+                "on-secondary-fixed-variant": "#004a79",
+                "on-primary-fixed-variant": "#93000d",
+                "on-tertiary-fixed-variant": "#5d4201",
+                "surface-container": "#1f1f24",
+                "primary-fixed": "#ffdad6",
+                "brand-red": "#E31E24",
+                "surface": "#121317",
+                "on-surface": "#e3e2e8",
+                "surface-tint": "#ffb4ab",
+                "on-primary-container": "#fffafa",
+                "on-surface-variant": "#e7bdb8",
+                "tertiary-container": "#8f6f2d",
+                "surface-onyx": "#1F2124",
+                "on-background": "#e3e2e8",
+                "surface-bright": "#38393e",
+                "on-primary-fixed": "#410002",
+                "surface-ebony": "#0B0C10",
+                "outline": "#ae8883",
+                "secondary-fixed-dim": "#9acbff",
+                "secondary-fixed": "#cfe4ff",
+                "on-primary": "#690006",
+                "surface-variant": "#343439",
+                "background": "#121317",
+                "on-secondary": "#003355",
+                "accent-gold": "#C5A059",
+                "towing-blue": "#007BC5",
+                "primary-fixed-dim": "#ffb4ab",
+                "surface-container-highest": "#343439",
+                "on-secondary-container": "#002c4b",
+                "surface-container-lowest": "#0d0e12",
+                "error": "#ffb4ab",
+                "surface-container-high": "#292a2e",
+                "tertiary": "#e9c176",
+                "inverse-primary": "#c00014",
+                "primary": "#ffb4ab",
+                "on-error-container": "#ffdad6",
+                "on-secondary-fixed": "#001d34",
+                "on-tertiary": "#412d00",
+                "tertiary-fixed-dim": "#e9c176"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "container-max": "1440px",
+                "margin-desktop": "64px",
+                "base": "8px",
+                "margin-mobile": "16px",
+                "section-gap": "120px",
+                "gutter": "24px"
+            },
+            "fontFamily": {
+                "display-lg-mobile": ["Manrope"],
+                "headline-lg": ["Manrope"],
+                "technical-label": ["JetBrains Mono"],
+                "display-lg": ["Manrope"],
+                "body-lg": ["Inter"],
+                "body-md": ["Inter"],
+                "headline-sm": ["Manrope"]
+            },
+            "fontSize": {
+                "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "technical-label": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "headline-sm": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .showroom-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .showroom-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .glass-header {
+            background: rgba(18, 19, 23, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #121317;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E31E24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-brand-red selection:text-white overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 glass-header border-b border-white/10">
+<div class="max-w-container-max mx-auto px-margin-desktop py-base flex justify-between items-center">
+<a class="font-display-lg text-headline-lg font-bold text-brand-red" href="#">ElsaRova</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-headline-sm text-headline-sm uppercase tracking-widest text-brand-red border-b-2 border-brand-red pb-1" href="#">Interior Lighting</a>
+<a class="font-headline-sm text-headline-sm uppercase tracking-widest text-on-surface/70 hover:text-brand-red transition-all duration-300" href="#">Exterior Lighting</a>
+<a class="font-headline-sm text-headline-sm uppercase tracking-widest text-on-surface/70 hover:text-brand-red transition-all duration-300" href="#">Towing Services</a>
+<a class="font-headline-sm text-headline-sm uppercase tracking-widest text-on-surface/70 hover:text-brand-red transition-all duration-300" href="#">About Us</a>
+<a class="font-headline-sm text-headline-sm uppercase tracking-widest text-on-surface/70 hover:text-brand-red transition-all duration-300" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex gap-4">
+<button class="text-on-surface/70 hover:text-brand-red transition-colors">
+<span class="material-symbols-outlined">location_on</span>
+</button>
+<button class="text-on-surface/70 hover:text-brand-red transition-colors">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+<button class="bg-brand-red text-white px-6 py-3 font-technical-label text-technical-label uppercase tracking-widest active:scale-95 transition-transform">
+                    Emergency Towing
+                </button>
+</div>
+</div>
+</header>
+<main class="pt-[140px]">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-section-gap showroom-reveal" id="hero">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
+<div class="lg:col-span-8">
+<span class="font-technical-label text-technical-label text-accent-gold uppercase mb-4 block tracking-[0.3em]">Curated Collection</span>
+<h1 class="font-display-lg text-display-lg leading-tight mb-8">Elevating Spaces <br/>Through Light.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">A masterful blend of architectural precision and aesthetic warmth. Our interior lighting collection transforms functional illumination into a centerpiece of high-end design.</p>
+</div>
+<div class="lg:col-span-4 flex justify-end">
+<div class="flex flex-col items-end border-r border-accent-gold pr-6">
+<span class="font-display-lg text-headline-lg text-accent-gold">2024</span>
+<span class="font-technical-label text-technical-label text-on-surface/50 uppercase">Portfolio Edition</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Gallery (Bento Style) -->
+<section class="max-w-container-max mx-auto px-margin-desktop pb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Item 1: Large Feature -->
+<div class="md:col-span-7 showroom-reveal">
+<div class="group relative aspect-[4/5] bg-surface-onyx overflow-hidden border border-white/5">
+<img alt="Minimalist triple pendant light with pale pink slatted shades" class="w-full h-full object-contain p-12 transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ujh4N393UWiGrQWj2yXlEQ14I-X9fciGob3SuUHrBe_bEGyjnkjI25i3P_i4WJHf4y0vjnUIICQegQAQ8ZlAjClBru_6oG07Oo8buCsHqfZS_Q0zhiX6sP0PNVpmHDtR8PmyIEBL48tPNzkrsbX2PaFuA2bbTtYCn09F7pC2a7ozWhIzZ3istTyOToITDeoXJZi_LDhxfcPCZQqcR2ytKU2V6FpzWhbKfUBV2JJ1JhzsaDHu32AQxGEfgJR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-ebony/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-8 flex flex-col justify-end">
+<span class="font-technical-label text-technical-label text-accent-gold uppercase mb-2">Pendant Series</span>
+<h3 class="font-headline-sm text-headline-sm text-white mb-2">Soft Linear Triple</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">A rhythmic composition of pale slats creating a delicate play of shadow and warmth. Perfect for dining corridors and breakfast bars.</p>
+</div>
+<div class="absolute top-6 left-6 flex gap-2">
+<span class="px-3 py-1 bg-surface-ebony/80 backdrop-blur-md border border-accent-gold/30 font-technical-label text-[10px] text-accent-gold uppercase">IP20</span>
+<span class="px-3 py-1 bg-surface-ebony/80 backdrop-blur-md border border-accent-gold/30 font-technical-label text-[10px] text-accent-gold uppercase">3000K</span>
+</div>
+</div>
+</div>
+<!-- Item 2: Vertical Split -->
+<div class="md:col-span-5 flex flex-col gap-gutter">
+<div class="group relative h-[48%] bg-surface-onyx overflow-hidden border border-white/5 showroom-reveal">
+<img alt="Modern black and gold wireframe pendant light" class="w-full h-full object-contain p-12 transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uildLrOhXTxYu9lnOuJevg4YS99mltHLbM2c2YX-gQ4LH9b3XURQmylJoFeyGQUHY4fWdetfA2cLEka_gPsMvr7zzS0RPcn7NSOJfYFdDO5AyrThgcQl29X4LnfeqfdVf2N084Spx4iKyTB5rJWPxCxIzj_zMR6OTo50cGuoibVNh8NzsX7hd00zHkbaWYEqYmL76H6fS3Aqfr6rzyxdMkSdiRT3z5ZdDyRjPMf0mjxO25Zh-q6wZWAEytV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-ebony/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-8 flex flex-col justify-end">
+<span class="font-technical-label text-technical-label text-accent-gold uppercase mb-2">Focal Point</span>
+<h3 class="font-headline-sm text-headline-sm text-white">Noir Gold Cage</h3>
+</div>
+</div>
+<div class="group relative h-[48%] bg-surface-onyx overflow-hidden border border-white/5 showroom-reveal">
+<img alt="Luxurious gold and crystal multi-tier chandelier" class="w-full h-full object-contain p-12 transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uh-HosT8HlmhFZu0bHnHNWUhQZwOZGq3EVjX8b0QprYyto09BXseIWzG-8ekP04LfpZUQ9CRc3VuJxuKuXkZILLtDvUdNTbpXvN-0J4o3J3oyAkmAQEtEDeNMQY4vgMt4xfxkt02xekwTarh0irne6suWlrgV_gH-a69Ckf2RMvOahYMtGp6bi8c15zVWz2SNo1ANkXDxIT3b31qMa56IvhIlCtXk5Lvi1wrdSLw5wTESgeO00mIn2GmPDl"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-ebony/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-8 flex flex-col justify-end">
+<span class="font-technical-label text-technical-label text-accent-gold uppercase mb-2">Grandeur</span>
+<h3 class="font-headline-sm text-headline-sm text-white">Cascading Crystal Gold</h3>
+</div>
+</div>
+</div>
+<!-- Item 3: Full Width Banner-like item -->
+<div class="md:col-span-12 showroom-reveal">
+<div class="group relative grid grid-cols-1 lg:grid-cols-2 bg-surface-onyx border border-white/5 min-h-[500px]">
+<div class="p-margin-desktop flex flex-col justify-center">
+<span class="font-technical-label text-technical-label text-accent-gold uppercase mb-4 tracking-[0.2em]">Statement Series</span>
+<h2 class="font-display-lg text-headline-lg mb-6">Industrial Cubist Trio</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-md">Geometric purity meets raw industrial texture. This ceiling-mounted fixture features three minimalist wire frames anchored by warm timber platforms, exposing the vintage-filament aesthetic in its most architectural form.</p>
+<div class="flex gap-12">
+<div class="flex flex-col">
+<span class="font-technical-label text-technical-label text-accent-gold uppercase mb-1">Material</span>
+<span class="font-body-md text-body-md">Matte Steel / Oak</span>
+</div>
+<div class="flex flex-col">
+<span class="font-technical-label text-technical-label text-accent-gold uppercase mb-1">Fitting</span>
+<span class="font-body-md text-body-md">3 x E27 Vintage</span>
+</div>
+</div>
+</div>
+<div class="relative bg-surface-container-low flex items-center justify-center p-12">
+<img alt="Industrial ceiling fixture with three black cubic wire frames and wood accents" class="w-full h-auto object-contain transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uhi9rVtRqDyVkM72L2pqmGd9uhfg8Ycb-IAjM1J5-vWkixtHuihifVofuMuJYRNF7QpM4-FHIfD3PBJb62A9j3fAVPsXubjUrS4sD5qwQo63FYuVG08Yor2rXT6fNkuxTZVkNvGWM8_rYs2_IzMMo3sXtcCnPTjTzvXujDFN9a6T5XEZel_E94M-SvaLbSWwQuZksJirZyVfihxsTX6exiAInl442K2pm3RjP1AS3ilm3FsJdkGOy3ON4Vk"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Excellence Section -->
+<section class="bg-surface-ebony py-section-gap border-y border-white/5">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<div class="showroom-reveal">
+<span class="material-symbols-outlined text-brand-red text-4xl mb-6">precision_manufacturing</span>
+<h4 class="font-headline-sm text-headline-sm mb-4">Precision Engineering</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Each fixture is calibrated for optimal light dispersion, ensuring that form and function coexist in perfect harmony.</p>
+</div>
+<div class="showroom-reveal" style="transition-delay: 100ms;">
+<span class="material-symbols-outlined text-brand-red text-4xl mb-6">palette</span>
+<h4 class="font-headline-sm text-headline-sm mb-4">Curated Aesthetics</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Selected materials from raw steel to hand-polished crystal, designed to complement contemporary and classic interiors.</p>
+</div>
+<div class="showroom-reveal" style="transition-delay: 200ms;">
+<span class="material-symbols-outlined text-brand-red text-4xl mb-6">lightbulb</span>
+<h4 class="font-headline-sm text-headline-sm mb-4">Luminous Atmosphere</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">We don't just sell lights; we define the mood of your living spaces through masterfully directed illumination.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-ebony border-t border-outline-variant py-section-gap px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="md:col-span-1">
+<h2 class="font-display-lg text-headline-sm text-brand-red mb-6">ElsaRova</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Showcasing the intersection of artistic lighting and professional utility since 1998.</p>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-technical-label text-technical-label text-accent-gold uppercase mb-6">Collections</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors" href="#">Interior Lighting</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors" href="#">Exterior Lighting</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors" href="#">Towing Services</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-technical-label text-technical-label text-accent-gold uppercase mb-6">Company</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors" href="#">About Us</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors" href="#">Contact</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-technical-label text-technical-label text-accent-gold uppercase mb-6">Location</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Strada Universitatii 28A,<br/>Suceava, Romania</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-surface-variant">social_leaderboard</span>
+<span class="material-symbols-outlined text-on-surface-variant">infrared</span>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-20 pt-8 border-t border-white/5">
+<p class="font-body-md text-body-md text-on-surface-variant text-center">© 2024 ElsaRova. Strada Universitatii 28A, Suceava. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Intersection Observer for scroll reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.showroom-reveal').forEach(el => observer.observe(el));
+
+        // Atmospheric parallax on mouse move for the hero section
+        const hero = document.getElementById('hero');
+        if(window.innerWidth > 1024) {
+            document.addEventListener('mousemove', (e) => {
+                const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+                const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+                hero.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            });
+        }
+    </script>
+</body></html>

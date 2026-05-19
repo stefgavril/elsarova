@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Towing &amp; Equipment Transport | ElsaRova</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#261900",
+                    "surface-dim": "#121317",
+                    "tertiary-fixed": "#ffdea5",
+                    "error-container": "#93000a",
+                    "secondary": "#9acbff",
+                    "outline-variant": "#5d3f3c",
+                    "on-tertiary-container": "#fffaf9",
+                    "surface-container-low": "#1a1b20",
+                    "on-error": "#690005",
+                    "primary-container": "#e31e24",
+                    "inverse-on-surface": "#2f3035",
+                    "inverse-surface": "#e3e2e8",
+                    "secondary-container": "#3a96e2",
+                    "on-secondary-fixed-variant": "#004a79",
+                    "on-primary-fixed-variant": "#93000d",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "surface-container": "#1f1f24",
+                    "primary-fixed": "#ffdad6",
+                    "brand-red": "#E31E24",
+                    "surface": "#121317",
+                    "on-surface": "#e3e2e8",
+                    "surface-tint": "#ffb4ab",
+                    "on-primary-container": "#fffafa",
+                    "on-surface-variant": "#e7bdb8",
+                    "tertiary-container": "#8f6f2d",
+                    "surface-onyx": "#1F2124",
+                    "on-background": "#e3e2e8",
+                    "surface-bright": "#38393e",
+                    "on-primary-fixed": "#410002",
+                    "surface-ebony": "#0B0C10",
+                    "outline": "#ae8883",
+                    "secondary-fixed-dim": "#9acbff",
+                    "secondary-fixed": "#cfe4ff",
+                    "on-primary": "#690006",
+                    "surface-variant": "#343439",
+                    "background": "#121317",
+                    "on-secondary": "#003355",
+                    "accent-gold": "#C5A059",
+                    "towing-blue": "#007BC5",
+                    "primary-fixed-dim": "#ffb4ab",
+                    "surface-container-highest": "#343439",
+                    "on-secondary-container": "#002c4b",
+                    "surface-container-lowest": "#0d0e12",
+                    "error": "#ffb4ab",
+                    "surface-container-high": "#292a2e",
+                    "tertiary": "#e9c176",
+                    "inverse-primary": "#c00014",
+                    "primary": "#ffb4ab",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary-fixed": "#001d34",
+                    "on-tertiary": "#412d00",
+                    "tertiary-fixed-dim": "#e9c176"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1440px",
+                    "margin-desktop": "64px",
+                    "base": "8px",
+                    "margin-mobile": "16px",
+                    "section-gap": "120px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": ["Manrope"],
+                    "headline-lg": ["Manrope"],
+                    "technical-label": ["JetBrains Mono"],
+                    "display-lg": ["Manrope"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-sm": ["Manrope"]
+            },
+            "fontSize": {
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "technical-label": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(31, 33, 36, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, #121317 30%, rgba(18, 19, 23, 0) 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(227, 30, 36, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-brand-red/30">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-base max-w-container-max mx-auto bg-surface/80 dark:bg-surface/80 backdrop-blur-xl border-b border-white/10">
+<div class="font-display-lg text-headline-lg font-bold text-brand-red dark:text-brand-red">ElsaRova</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-headline-sm text-headline-sm uppercase tracking-widest text-on-surface/70 hover:text-on-surface transition-colors" href="#">Interior Lighting</a>
+<a class="font-headline-sm text-headline-sm uppercase tracking-widest text-on-surface/70 hover:text-on-surface transition-colors" href="#">Exterior Lighting</a>
+<a class="font-headline-sm text-headline-sm uppercase tracking-widest text-brand-red border-b-2 border-brand-red pb-1" href="#">Towing Services</a>
+<a class="font-headline-sm text-headline-sm uppercase tracking-widest text-on-surface/70 hover:text-on-surface transition-colors" href="#">About Us</a>
+<a class="font-headline-sm text-headline-sm uppercase tracking-widest text-on-surface/70 hover:text-on-surface transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-base">
+<span class="material-symbols-outlined text-brand-red cursor-pointer">location_on</span>
+<span class="material-symbols-outlined text-brand-red cursor-pointer">call</span>
+<button class="ml-gutter bg-primary-container text-on-primary-container px-6 py-3 font-headline-sm uppercase tracking-widest active:scale-95 transition-transform">
+                Emergency Towing
+            </button>
+</div>
+</nav>
+<main class="pt-[88px]">
+<!-- Hero Section -->
+<section class="relative h-[819px] w-full overflow-hidden flex items-center">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A professional heavy-duty towing truck parked on a coastal highway during the blue hour. The truck features polished chrome accents and vibrant orange safety lights that reflect off the wet asphalt. The background shows a dramatic, moody sky and distant mountains, emphasizing a sense of reliability and constant readiness in a premium, technical aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfQ7RnXM7WbQvmQ0q12SkyHPJQFPxyLgYlaHcuYHFPGqO5i9kE9oS7cERXARnbKwx60ATdwbGU0PgKcPHqPdguAFJ8K6mX93PtdPMXz1l9R2pk1ADCT5wiPOlRxIg2cCPISosjFciHKbRq9il2JGe7yiSoqXZG4mCsPWNHXCk--BV_uIw213N0TGkgo_efLy9OrdZVBMLlzOk6dFkwDb-cB3HYv-9eA0VWw22951Z8LD1Z5UBlpRkHTZX_C9U4ow1ltCcRY-os3_-E"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 px-margin-desktop w-full max-w-container-max mx-auto">
+<div class="max-w-2xl">
+<span class="font-technical-label text-technical-label text-brand-red bg-brand-red/10 px-3 py-1 mb-6 inline-block border border-brand-red/20 uppercase">Available 24/7 • Roadside Assistance</span>
+<h1 class="font-display-lg text-display-lg text-white mb-6 uppercase leading-tight">Elite Recovery &amp; <br/>Heavy Logistics</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                        Uncompromising reliability for vehicle recovery and specialized light equipment transport. Professional precision when you need it most.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-gutter">
+<a class="flex items-center justify-center gap-3 bg-brand-red px-8 py-5 text-on-primary font-headline-sm uppercase tracking-widest hover:brightness-110 transition-all" href="tel:0744350851">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">emergency_share</span>
+                            0744 350 851
+                        </a>
+<button class="border border-white/20 px-8 py-5 text-white font-headline-sm uppercase tracking-widest hover:bg-white/5 transition-all">
+                            View Services
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase tracking-wider mb-4">Precision Transport</h2>
+<div class="w-20 h-1 bg-brand-red"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-auto md:h-[600px]">
+<!-- Car Towing Card -->
+<div class="md:col-span-8 group relative overflow-hidden bg-surface-onyx border border-white/5">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="A luxury sports car being carefully loaded onto a modern flatbed tow truck. The scene is shot from a low angle with sharp focus on the winch mechanisms and the premium finish of the vehicle. The lighting is crisp and technical, highlighting the industrial textures of the truck bed against a minimalist urban background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8lU59rDw5IvDrjc5Ecf14ddrw09rY4-ybkpqYDLJea64VhNULuka8YLn7vCC2WDetvLH4QzKGdVpTeEAOzrJRjBivNVWZGN3EFLANVIBhPyR0gYDjaiLmPWo0dQZJs633kNIg1pdQpDEupB1ZzF3Gbc374rkHDcNFlvmeyBB8fMZxgAP6JJUvnkDn_TkIzWUHDd70Ay5WbmEPIkR9hXeD-CmUv8g5LtKl9x6wvTY0ChhVJwRvHCAml-EktpcSIKqadr1ELgzN816J"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-ebony via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<span class="font-technical-label text-technical-label text-accent-gold mb-2 block">CATEGORY 01</span>
+<h3 class="font-display-lg text-headline-lg text-white uppercase mb-4">Premium Vehicle Recovery</h3>
+<p class="font-body-md text-on-surface-variant max-w-md mb-6">Damaged or non-operational luxury vehicles and passenger cars transported with surgical precision using hydraulic flatbed systems.</p>
+<div class="flex gap-4">
+<span class="font-technical-label text-technical-label bg-white/5 border border-white/10 px-3 py-2 text-white">FLATBED</span>
+<span class="font-technical-label text-technical-label bg-white/5 border border-white/10 px-3 py-2 text-white">HYDRAULIC</span>
+<span class="font-technical-label text-technical-label bg-white/5 border border-white/10 px-3 py-2 text-white">LOW-CLEARANCE</span>
+</div>
+</div>
+</div>
+<!-- 24/7 Status Card -->
+<div class="md:col-span-4 bg-brand-red flex flex-col justify-center items-center text-center p-10 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+<div class="w-full h-full grid grid-cols-4 grid-rows-4">
+<div class="border border-white/50"></div><div class="border border-white/50"></div><div class="border border-white/50"></div><div class="border border-white/50"></div>
+<div class="border border-white/50"></div><div class="border border-white/50"></div><div class="border border-white/50"></div><div class="border border-white/50"></div>
+</div>
+</div>
+<span class="material-symbols-outlined text-[64px] text-white mb-6 animate-pulse" style="font-variation-settings: 'FILL' 1;">timer</span>
+<h3 class="font-display-lg text-headline-lg text-white uppercase mb-4">24/7 Support</h3>
+<p class="font-body-md text-white/90 mb-8">Rapid response within Suceava and surrounding regions. No downtime, no delays.</p>
+<a class="font-technical-label text-technical-label bg-white text-brand-red px-6 py-3 uppercase font-bold tracking-widest hover:bg-opacity-90 transition-all" href="tel:0744350851">Emergency Call</a>
+</div>
+<!-- Light Machinery Card -->
+<div class="md:col-span-4 group relative overflow-hidden bg-surface-onyx border border-white/5">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" data-alt="Technical close-up of light industrial machinery being secured for transport. Focus on heavy-duty ratcheting straps and mechanical linkages. The lighting is cool and industrial, emphasizing the strength and technical nature of the transport process in a professional dark-themed showroom style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLcfoNeqnFm2Q8Z4cBcYqdQE8UcAN7jNACovzUxsmpD0CJTNSw-yoX03OnhbCun1g1LXWUQ1-U3Yiu7EnUTIjXlvluc6s6gP92qQwL1dbXMhT2X3MQNfQtn3C2-7VQnrltq_w2ejz1ibEG_0ovuGX6qD4W6ONf1cjzdJKkOrT0mjm87Axspqff3cVfjG6N7Ozf2as-qCL-Q7z45U9zDs_E1UzEs9xtBtfvaoOU6nMsv6Q06X2swrQfOz67nhLqmt3JzzFncGFBDeCz"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-ebony to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<h3 class="font-display-lg text-headline-sm text-white uppercase mb-2">Technical Logistics</h3>
+<p class="font-body-md text-on-surface-variant">Transport for forklifts, mini-excavators, and generators.</p>
+</div>
+</div>
+<!-- Area Coverage Card -->
+<div class="md:col-span-8 bg-surface-onyx border border-white/5 p-10 flex items-center justify-between group overflow-hidden">
+<div class="max-w-md">
+<h3 class="font-headline-lg text-headline-lg text-white uppercase mb-4">Operational Radius</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Strategically based in Suceava, providing comprehensive coverage across North-Eastern Romania and cross-border transport requests.</p>
+<div class="flex items-center gap-2 text-towing-blue">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-technical-label text-technical-label uppercase">National &amp; International Reach</span>
+</div>
+</div>
+<div class="hidden lg:block w-1/3 h-full relative">
+<span class="material-symbols-outlined text-[180px] text-white/5 absolute -right-10 -bottom-10 rotate-12 group-hover:rotate-0 transition-transform duration-700">public</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specs / Equipment Section -->
+<section class="bg-surface-ebony py-section-gap">
+<div class="px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center">
+<div>
+<span class="font-technical-label text-technical-label text-accent-gold uppercase mb-4 block">Fleet Specifications</span>
+<h2 class="font-display-lg text-display-lg text-white uppercase mb-8">Hardware Built for Duty</h2>
+<div class="space-y-6">
+<div class="border-b border-white/10 pb-6 flex items-start gap-gutter">
+<span class="font-technical-label text-headline-sm text-brand-red">01</span>
+<div>
+<h4 class="font-headline-sm text-white mb-2 uppercase">Reinforced Winch Systems</h4>
+<p class="font-body-md text-on-surface-variant">High-capacity pulling power for off-road recovery and complex extraction scenarios.</p>
+</div>
+</div>
+<div class="border-b border-white/10 pb-6 flex items-start gap-gutter">
+<span class="font-technical-label text-headline-sm text-brand-red">02</span>
+<div>
+<h4 class="font-headline-sm text-white mb-2 uppercase">Low-Angle Ramps</h4>
+<p class="font-body-md text-on-surface-variant">Optimized for high-performance sports cars with minimal ground clearance.</p>
+</div>
+</div>
+<div class="border-b border-white/10 pb-6 flex items-start gap-gutter">
+<span class="font-technical-label text-headline-sm text-brand-red">03</span>
+<div>
+<h4 class="font-headline-sm text-white mb-2 uppercase">GPS Live Tracking</h4>
+<p class="font-body-md text-on-surface-variant">Full transparency for high-value cargo with real-time location updates during transit.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square bg-surface-onyx border border-white/10 p-8 flex items-center justify-center">
+<img class="w-full h-full object-cover filter grayscale contrast-125" data-alt="Close up of a heavy duty metal tow hook and chain in a stark, studio-like lighting. The metallic textures are highly detailed, showing signs of strength and industrial utility. The image uses a high-contrast dark palette with deep shadows and sharp highlights, consistent with the ElsaRova technical brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE0PXKEpQBcbcTvf41hkLMhqQVYbs5gfGZgiZBYYgq1eHuNX8piXy_e4pq-9mBi_uKG-ioaIjyEmhA7MKgB0lD3juwOn6JUH1kl94atiD9BwDnl015myjCb23Gw9EdMcNA7iIrUvClmr2yM_skhtEIRBPcFPFWCfIx3NwHTH9UkkOK-w5qbxDtKxuKCgTY5kgvF3xoxgR-EWBf15856wwR2mz7WOSRNXkjjaZ0z2RoGaVEL30qUF89-WZN1HZ-rOCxzt4JR45aXzRY"/>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-10 -right-10 w-40 h-40 border-r-2 border-b-2 border-brand-red opacity-30"></div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-section-gap px-margin-desktop">
+<div class="max-w-container-max mx-auto bg-surface-onyx p-16 relative overflow-hidden flex flex-col items-center text-center border border-brand-red/20">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(227,30,36,0.1)_0%,transparent_70%)]"></div>
+<h2 class="font-display-lg text-display-lg text-white uppercase mb-6 relative z-10">Stranded? Get Moving Now.</h2>
+<p class="font-body-lg text-on-surface-variant mb-12 max-w-2xl relative z-10">
+                    Don't wait in the cold. Our response teams are stationed for immediate deployment. Professional help is just a phone call away.
+                </p>
+<div class="relative z-10 flex flex-col items-center">
+<a class="text-[48px] md:text-[64px] font-bold text-brand-red text-glow hover:scale-105 transition-transform duration-300 mb-4 block" href="tel:0744350851">0744 350 851</a>
+<span class="font-technical-label text-technical-label text-accent-gold uppercase tracking-widest">Suceava, Strada Universitatii 28A</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto border-t border-outline-variant bg-surface-ebony">
+<div class="col-span-1">
+<div class="font-display-lg text-headline-sm text-brand-red mb-6">ElsaRova</div>
+<p class="font-body-md text-on-surface-variant">The gold standard in architectural lighting and professional technical recovery services.</p>
+</div>
+<div>
+<h5 class="font-headline-sm text-white uppercase mb-6">Services</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-white transition-colors" href="#">Interior Lighting</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-white transition-colors" href="#">Exterior Lighting</a></li>
+<li><a class="font-body-md text-brand-red font-bold" href="#">Towing Services</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline-sm text-white uppercase mb-6">Company</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-white transition-colors" href="#">About Us</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-white transition-colors" href="#">Contact</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline-sm text-white uppercase mb-6">Location</h5>
+<p class="font-body-md text-on-surface-variant mb-4">Strada Universitatii 28A,<br/>Suceava, Romania</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-white/50 cursor-pointer hover:text-brand-red">share</span>
+<span class="material-symbols-outlined text-white/50 cursor-pointer hover:text-brand-red">pin_drop</span>
+</div>
+</div>
+<div class="col-span-full pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-base">
+<p class="font-body-md text-on-surface-variant">© 2024 ElsaRova. Strada Universitatii 28A, Suceava. All rights reserved.</p>
+<div class="flex gap-gutter">
+<span class="font-technical-label text-technical-label text-accent-gold">ISO 9001 CERTIFIED</span>
+<span class="font-technical-label text-technical-label text-accent-gold">24/7 OPERATIONS</span>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-base');
+            } else {
+                nav.classList.add('py-base');
+                nav.classList.remove('py-2');
+            }
+        });
+    </script>
+</body></html>

@@ -1,349 +1,364 @@
 <!DOCTYPE html>
-<html lang="ro">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ElsaRova – Corpuri de Iluminat Suceava</title>
-  <meta name="description" content="ElsaRova – Corpuri de iluminat interior și exterior, becuri LED și accesorii electrice. Suceava, România." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ElsaRova – Corpuri de Iluminat Suceava</title>
+<meta name="description" content="ElsaRova – Corpuri de iluminat interior și exterior, becuri LED și accesorii electrice. Suceava, România. Tel: 0744 350 851"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #121317; /* onyx-base */
+            color: #FFFFFF; /* crisp-white */
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-shadow-hero {
+            text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "error-container": "#93000a",
+                      "on-secondary-fixed": "#1a1b20",
+                      "inverse-surface": "#fddbd7",
+                      "surface-container-lowest": "#1a0a08",
+                      "signature-red": "#E31E24",
+                      "onyx-base": "#121317",
+                      "primary": "#ffb4ab",
+                      "onyx-surface": "#1C1D21",
+                      "on-error-container": "#ffdad6",
+                      "surface-container-high": "#392523",
+                      "on-tertiary-container": "#fbfcff",
+                      "surface": "#200f0d",
+                      "on-primary-container": "#fffafa",
+                      "surface-bright": "#493431",
+                      "tertiary-fixed-dim": "#8ecdff",
+                      "on-surface-variant": "#e7bdb8",
+                      "on-tertiary-fixed": "#001e30",
+                      "secondary": "#c7c6cb",
+                      "secondary-fixed-dim": "#c7c6cb",
+                      "muted-gray": "#808080",
+                      "on-tertiary-fixed-variant": "#004b71",
+                      "on-primary-fixed": "#410002",
+                      "surface-tint": "#ffb4ab",
+                      "crisp-white": "#FFFFFF",
+                      "surface-dim": "#200f0d",
+                      "primary-fixed": "#ffdad6",
+                      "on-primary": "#690006",
+                      "on-surface": "#fddbd7",
+                      "on-secondary-fixed-variant": "#46464b",
+                      "secondary-container": "#46464b",
+                      "tertiary": "#8ecdff",
+                      "surface-variant": "#45302d",
+                      "surface-container-low": "#291715",
+                      "on-error": "#690005",
+                      "outline": "#ae8883",
+                      "primary-container": "#e31e24",
+                      "inverse-on-surface": "#402b29",
+                      "background": "#200f0d",
+                      "on-secondary-container": "#b5b4ba",
+                      "inverse-primary": "#c00014",
+                      "on-primary-fixed-variant": "#93000d",
+                      "outline-variant": "#5d3f3c",
+                      "on-tertiary": "#00344f",
+                      "tertiary-container": "#007bb5",
+                      "on-secondary": "#2f3035",
+                      "surface-container": "#2d1b19",
+                      "tertiary-fixed": "#cbe6ff",
+                      "secondary-fixed": "#e3e2e7",
+                      "primary-fixed-dim": "#ffb4ab",
+                      "error": "#ffb4ab",
+                      "on-background": "#fddbd7",
+                      "surface-container-highest": "#45302d"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "160px",
+                      "margin-mobile": "20px",
+                      "gutter": "32px",
+                      "unit": "8px",
+                      "container-max": "1440px",
+                      "margin-desktop": "64px",
+                      "margin-tablet": "32px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Manrope"],
+                      "display-lg": ["Manrope"],
+                      "body-lg": ["Manrope"],
+                      "headline-md": ["Manrope"],
+                      "body-md": ["Manrope"],
+                      "headline-lg-mobile": ["Manrope"],
+                      "label-caps": ["Manrope"]
+              },
+              "fontSize": {
+                      "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "display-lg": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                      "body-lg": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+      </script>
 </head>
-<body>
+<body class="overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md dark:bg-background/80 border-b border-crisp-white/10">
+<div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold tracking-tighter text-crisp-white" href="#">ELSAROVA</a>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-crisp-white font-label-caps hover:text-signature-red transition-colors duration-300" href="#interior">Interior</a>
+<a class="text-crisp-white font-label-caps hover:text-signature-red transition-colors duration-300" href="#exterior">Exterior</a>
+<a class="text-signature-red font-label-caps hover:text-crisp-white transition-colors duration-300" href="https://tractari.elsarova.ro">Tractări</a>
+<a class="text-crisp-white font-label-caps hover:text-signature-red transition-colors duration-300" href="#about">Contact</a>
+</div>
+<a href="tel:0744350851" class="bg-crisp-white text-onyx-base px-6 py-2 font-label-caps hover:bg-signature-red hover:text-crisp-white transition-colors duration-300">
+    0744 350 851
+</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/40 z-10"></div>
+<img alt="Architectural Lighting Showcase" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ugDwiZJO6JYYE4lYEqsCWviY-JOAdrLgARMLLQ1yQg0J_MxbVjGd3vza15H8JaNvsxeB7RE-vzavl4AzVkt9rhM52XeMzV8dvRksNn0x-ZBtzoyOa097MpcnZKwzNvS80F96k67GWNS9CbXFHCCjWyKWvoxyGxp_8zsMO0BAqCCy0zPrB3WNRQT9ElwwXvThqlJvebimD6GFEuDvSLfHcC0bobDL8hS4mQzbfoP2oY49_TeHTYN_OICjMPt"/>
+</div>
+<div class="relative z-20 px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="max-w-3xl">
+<span class="font-label-caps text-signature-red mb-6 block tracking-widest uppercase">Premium Lighting Solutions</span>
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-headline-lg-mobile text-crisp-white mb-8 text-shadow-hero">
+                    The Art of Illumination.
+                </h1>
+<p class="font-body-lg text-body-lg text-crisp-white/90 mb-12 max-w-xl">
+                    Where industrial precision meets architectural luxury. We craft lighting experiences that define spaces and elevate moments.
+                </p>
+<div class="flex gap-6">
+<button class="bg-crisp-white text-onyx-base px-10 py-5 font-label-caps hover:bg-signature-red hover:text-crisp-white transition-all duration-300 scale-100 active:scale-95">
+                        Discover Interior
+                    </button>
+<button class="border border-crisp-white text-crisp-white px-10 py-5 font-label-caps hover:border-signature-red hover:text-signature-red transition-all duration-300 scale-100 active:scale-95">
+                        View Projects
+                    </button>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce hidden md:block">
+<span class="material-symbols-outlined text-crisp-white text-3xl">expand_more</span>
+</div>
+</header>
+<!-- Interior Excellence Section -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto" id="interior">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 order-2 md:order-1">
+<span class="font-label-caps text-signature-red mb-4 block">Curated Collections</span>
+<h2 class="font-headline-lg text-headline-lg text-crisp-white mb-6">Interior Excellence</h2>
+<p class="font-body-md text-body-md text-muted-gray mb-10">
+                    Our interior lighting systems are designed to transform private residences and commercial spaces into canvases of light. Using high-grade metals and precision optics, we create atmospheres that are both raw and refined.
+                </p>
+<div class="space-y-6">
+<div class="border-b border-crisp-white/10 pb-4 flex justify-between items-center group cursor-pointer">
+<span class="font-headline-md text-[20px] group-hover:text-signature-red transition-colors">Architectural Pendants</span>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+<div class="border-b border-crisp-white/10 pb-4 flex justify-between items-center group cursor-pointer">
+<span class="font-headline-md text-[20px] group-hover:text-signature-red transition-colors">Sculptural Wall Sconces</span>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 order-1 md:order-2 grid grid-cols-2 gap-gutter">
+<div class="aspect-square overflow-hidden bg-onyx-surface group">
+<img alt="Lustra Eglo Romazzina" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0ujh4N393UWiGrQWj2yXlEQ14I-X9fciGob3SuUHrBe_bEGyjnkjI25i3P_i4WJHf4y0vjnUIICQegQAQ8ZlAjClBru_6oG07Oo8buCsHqfZS_Q0zhiX6sP0PNVpmHDtR8PmyIEBL48tPNzkrsbX2PaFuA2bbTtYCn09F7pC2a7ozWhIzZ3istTyOToITDeoXJZi_LDhxfcPCZQqcR2ytKU2V6FpzWhbKfUBV2JJ1JhzsaDHu32AQxGEfgJR"/>
+</div>
+<div class="aspect-square overflow-hidden bg-onyx-surface group mt-12">
+<img alt="Pendul Eglo Encinitos" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uildLrOhXTxYu9lnOuJevg4YS99mltHLbM2c2YX-gQ4LH9b3XURQmylJoFeyGQUHY4fWdetfA2cLEka_gPsMvr7zzS0RPcn7NSOJfYFdDO5AyrThgcQl29X4LnfeqfdVf2N084Spx4iKyTB5rJWPxCxIzj_zMR6OTo50cGuoibVNh8NzsX7hd00zHkbaWYEqYmL76H6fS3Aqfr6rzyxdMkSdiRT3z5ZdDyRjPMf0mjxO25Zh-q6wZWAEytV"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Mid-Page Brand Statement (Asymmetric) -->
+<section class="bg-onyx-surface py-section-gap overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop relative">
+<div class="absolute -right-20 top-0 opacity-10 pointer-events-none select-none">
+<h2 class="text-[200px] font-extrabold leading-none tracking-tighter text-crisp-white">LUXE</h2>
+</div>
+<div class="md:w-2/3">
+<h3 class="font-display-lg text-[40px] md:text-[64px] leading-tight text-crisp-white mb-8">
+                    Crafting light for those who perceive <span class="text-signature-red">depth</span> in the shadows.
+                </h3>
+<div class="w-24 h-1 bg-signature-red mb-8"></div>
+<p class="font-body-lg text-body-lg text-muted-gray max-w-lg">
+                    Based on industrial principles, our designs are stripped of the superfluous. We focus on the pure interaction between material, electricity, and the human eye.
+                </p>
+</div>
+</div>
+</section>
+<!-- Exterior Elegance Section -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto" id="exterior">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<div class="md:col-span-8 overflow-hidden">
+<div class="relative group aspect-[16/9]">
+<img alt="Exterior Lighting Design Faedo" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uh53IcwlVX7sQzo3li3dWCvn46Pvhp8yE834VyuFSLeIZcEa1xFPnXs9hSZrWzyKbeLx0JEXjVnhV8tMwSLQM_hLbpeUdFCy3WlwHHLB2i0u7T5Seq9JMDFPsrTOrpYHU21mWtSAC4XPRFDm9VYMSu8MGC3rJ0Fw5ALpaV5nc7cY7ATauaGslzpIoSBof7BPYt816Cz3zqbXDQwU9fyCeHhaVpBbKiEqmxelcLB0vX8VJBbsJ3qWFOUqZY"/>
+<div class="absolute bottom-8 left-8">
+<span class="font-label-caps text-crisp-white bg-signature-red px-4 py-2">Faedo Series</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 sticky top-32">
+<span class="font-label-caps text-signature-red mb-4 block">Outdoor Resilience</span>
+<h2 class="font-headline-lg text-headline-lg text-crisp-white mb-6">Exterior Elegance</h2>
+<p class="font-body-md text-body-md text-muted-gray mb-8">
+                    Weather-sealed, precision-machined, and aesthetically imposing. Our exterior collection ensures that architectural beauty doesn't fade with the sun.
+                </p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 font-label-caps text-crisp-white/80">
+<span class="material-symbols-outlined text-signature-red text-sm">check_circle</span> IP65 Weather Protection
+                    </li>
+<li class="flex items-center gap-3 font-label-caps text-crisp-white/80">
+<span class="material-symbols-outlined text-signature-red text-sm">check_circle</span> High-Output LED Integration
+                    </li>
+<li class="flex items-center gap-3 font-label-caps text-crisp-white/80">
+<span class="material-symbols-outlined text-signature-red text-sm">check_circle</span> Corrosive-Resistant Finishes
+                    </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Specialized Services (Towing) Section -->
+<section class="relative py-section-gap overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/80 z-10"></div>
+<div class="w-full h-full bg-cover bg-center grayscale opacity-50" data-alt="A heavy-duty industrial tow truck photographed in a moody, high-contrast black and white style. The scene is illuminated by sharp, dramatic highlights that emphasize the truck's metallic textures and powerful winch cables. The atmosphere is nocturnal and serious, reflecting industrial strength and reliable service. Shadows are deep and rich, contributing to a high-end, professional aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCzKcksKDZhZt8eYRKmjTMgeCeT67WPzzyGkWvKb_eGTBKpWrGfi7CiHFVCDnsOX9nf83FpzNYMioqopilNz-ytnV5BrLO15m7LocsnYlhFO968BfkkmoRoKB1ggXWkrs87pgk_skgQLMH5uVghMGtyGVJ9Mqx4GDs7wJ7DKcmw66CvuIVErF6Il1T9gqVzG_MMtSf4nUDGF8P0Gmj92AnHE56cspG13C_SKVO6kw1SWSDUQIfwAtfWmaLHYyrP6zax9jLTiRLz7jKH')"></div>
+</div>
+<div class="relative z-20 px-margin-desktop max-w-container-max mx-auto text-center">
+<span class="font-label-caps text-signature-red mb-4 block">Specialized Logistics</span>
+<h2 class="font-display-lg text-headline-lg md:text-display-lg text-crisp-white mb-8 tracking-tighter">TOWING &amp; RECOVERY</h2>
+<p class="font-body-lg text-body-lg text-crisp-white/70 max-w-2xl mx-auto mb-12">
+                Our commitment to industrial strength extends beyond illumination. We provide elite towing and recovery services through our dedicated division.
+            </p>
+<a class="inline-block bg-signature-red text-crisp-white px-12 py-6 font-headline-md text-[20px] font-bold tracking-widest hover:bg-crisp-white hover:text-signature-red transition-all duration-300 shadow-xl" href="https://tractari.elsarova.ro" target="_blank">
+                TRACTARI.ELSAROVA.RO
+            </a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-onyx-surface dark:bg-onyx-surface w-full py-section-gap border-t border-crisp-white/10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<!-- Brand & Info -->
+<div class="space-y-8">
+<h3 class="font-headline-md text-headline-md text-crisp-white font-bold">ELSAROVA</h3>
+<p class="font-body-md text-body-md text-muted-gray max-w-xs">
+                    Pioneers in high-end architectural lighting and industrial excellence. Redefining nocturnal spaces since 2024.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-crisp-white/20 flex items-center justify-center hover:border-signature-red hover:text-signature-red transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</a>
+<a class="w-10 h-10 border border-crisp-white/20 flex items-center justify-center hover:border-signature-red hover:text-signature-red transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+</div>
+</div>
+<!-- Links -->
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<span class="font-label-caps text-crisp-white opacity-40">Sections</span>
+<nav class="flex flex-col gap-2">
+<a class="font-label-caps text-muted-gray hover:text-crisp-white transition-colors" href="#interior">Interior</a>
+<a class="font-label-caps text-muted-gray hover:text-crisp-white transition-colors" href="#exterior">Exterior</a>
+<a class="font-label-caps text-muted-gray hover:text-crisp-white transition-colors" href="#about">About</a>
+</nav>
+</div>
+<div class="space-y-4">
+<span class="font-label-caps text-crisp-white opacity-40">Utility</span>
+<nav class="flex flex-col gap-2">
+<a class="font-label-caps text-muted-gray hover:text-signature-red transition-colors" href="https://tractari.elsarova.ro">TOWING</a>
+<a class="font-label-caps text-muted-gray hover:text-crisp-white transition-colors" href="#">Terms</a>
+<a class="font-label-caps text-muted-gray hover:text-crisp-white transition-colors" href="#">Privacy</a>
+</nav>
+</div>
+</div>
+<!-- Contact -->
+<div class="space-y-6">
+<span class="font-label-caps text-crisp-white opacity-40">Office</span>
+<p class="font-body-md text-body-md text-muted-gray">
+                    Strada Universității 28A<br/>Suceava, România
+                </p>
+<p class="font-headline-md text-[18px] text-crisp-white">
+                    <a href="tel:0744350851" class="hover:text-signature-red transition-colors">0744 350 851</a>
+                </p>
+<p class="font-body-md text-muted-gray">
+                    <a href="mailto:elsarova@gmail.com" class="hover:text-crisp-white transition-colors">elsarova@gmail.com</a>
+                </p>
+<div class="pt-4">
+<p class="font-label-caps text-[10px] text-muted-gray tracking-[0.2em]">
+                        © 2025 ELSAROVA. TOATE DREPTURILE REZERVATE.
+                    </p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Interactive Atmospheric Elements -->
+<script>
+        // Subtle parallax effect on scroll for hero images
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const heroImg = document.querySelector('header img');
+            if (heroImg) {
+                heroImg.style.transform = `scale(1.1) translateY(${scrollY * 0.1}px)`;
+            }
+        });
 
-  <!-- NAV -->
-  <header class="nav" id="nav">
-    <div class="nav__inner container">
-      <a href="#" class="nav__logo">
-        <span class="logo-text">Elsa<span class="logo-accent">Rova</span></span>
-        <span class="logo-sub">Electrice Suceava</span>
-      </a>
-      <button class="nav__toggle" id="navToggle" aria-label="Meniu">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="nav__links" id="navLinks">
-        <a href="#produse">Produse</a>
-        <a href="#despre">Despre noi</a>
-        <a href="https://tractari.elsarova.ro" class="nav__tractari">Tractări</a>
-        <a href="#contact">Contact</a>
-        <a href="tel:0744350851" class="nav__phone">0744 350 851</a>
-      </nav>
-    </div>
-  </header>
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero__glow"></div>
-    <div class="hero__glow-2"></div>
-    <div class="hero__grid"></div>
-    <div class="hero__inner">
-      <div class="hero__text">
-        <p class="hero__eyebrow">Suceava, România</p>
-        <h1 class="hero__title">Corpuri de<br><em>Iluminat</em><br>de Calitate</h1>
-        <p class="hero__subtitle">Soluții de iluminat interior și exterior pentru orice spațiu — de la lustre elegante până la spoturi LED eficiente.</p>
-        <div class="hero__ctas">
-          <a href="#produse" class="btn btn--primary">Descoperă produsele</a>
-          <a href="#contact" class="btn btn--outline-dark" style="border-color:rgba(255,255,255,.2);color:#fff;">Contactează-ne</a>
-        </div>
-      </div>
-      <div class="hero__visual">
-        <div class="hero__lamp">
-          <svg viewBox="0 0 220 270" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Chandelier SVG -->
-            <line x1="110" y1="0" x2="110" y2="40" stroke="#C8922A" stroke-width="2.5" stroke-linecap="round"/>
-            <ellipse cx="110" cy="50" rx="20" ry="8" stroke="#C8922A" stroke-width="2" fill="none" opacity=".6"/>
-            <!-- Main body -->
-            <path d="M90 50 Q85 70 70 80 L60 120 Q58 126 65 128 L155 128 Q162 126 160 120 L150 80 Q135 70 130 50Z" stroke="#C8922A" stroke-width="2" fill="rgba(200,146,42,.07)"/>
-            <!-- Arms -->
-            <path d="M75 95 Q50 98 40 110" stroke="#C8922A" stroke-width="2" stroke-linecap="round" fill="none"/>
-            <path d="M145 95 Q170 98 180 110" stroke="#C8922A" stroke-width="2" stroke-linecap="round" fill="none"/>
-            <path d="M80 105 Q60 110 50 122" stroke="#C8922A" stroke-width="2" stroke-linecap="round" fill="none" opacity=".6"/>
-            <path d="M140 105 Q160 110 170 122" stroke="#C8922A" stroke-width="2" stroke-linecap="round" fill="none" opacity=".6"/>
-            <!-- Center drop arm -->
-            <line x1="110" y1="128" x2="110" y2="148" stroke="#C8922A" stroke-width="2" stroke-linecap="round"/>
-            <!-- Candles / bulbs on arms -->
-            <rect x="33" y="108" width="14" height="18" rx="3" stroke="#C8922A" stroke-width="1.5" fill="rgba(200,146,42,.12)"/>
-            <ellipse cx="40" cy="108" rx="5" ry="2.5" fill="#C8922A" opacity=".5"/>
-            <ellipse cx="40" cy="126" rx="4" ry="2" stroke="#C8922A" stroke-width="1" fill="none" opacity=".4"/>
-            <!-- glow under candle -->
-            <ellipse cx="40" cy="128" rx="8" ry="3" fill="rgba(200,146,42,.15)"/>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('translate-y-10');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
 
-            <rect x="173" y="108" width="14" height="18" rx="3" stroke="#C8922A" stroke-width="1.5" fill="rgba(200,146,42,.12)"/>
-            <ellipse cx="180" cy="108" rx="5" ry="2.5" fill="#C8922A" opacity=".5"/>
-            <ellipse cx="180" cy="126" rx="4" ry="2" stroke="#C8922A" stroke-width="1" fill="none" opacity=".4"/>
-            <ellipse cx="180" cy="128" rx="8" ry="3" fill="rgba(200,146,42,.15)"/>
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
 
-            <rect x="43" y="120" width="14" height="18" rx="3" stroke="#C8922A" stroke-width="1.5" fill="rgba(200,146,42,.12)" opacity=".7"/>
-            <ellipse cx="50" cy="120" rx="5" ry="2.5" fill="#C8922A" opacity=".4"/>
-            <ellipse cx="50" cy="140" rx="8" ry="3" fill="rgba(200,146,42,.12)"/>
-
-            <rect x="163" y="120" width="14" height="18" rx="3" stroke="#C8922A" stroke-width="1.5" fill="rgba(200,146,42,.12)" opacity=".7"/>
-            <ellipse cx="170" cy="120" rx="5" ry="2.5" fill="#C8922A" opacity=".4"/>
-            <ellipse cx="170" cy="140" rx="8" ry="3" fill="rgba(200,146,42,.12)"/>
-
-            <!-- Center pendant -->
-            <rect x="100" y="148" width="20" height="28" rx="10" stroke="#C8922A" stroke-width="2" fill="rgba(200,146,42,.1)"/>
-            <ellipse cx="110" cy="148" rx="7" ry="3" fill="#C8922A" opacity=".5"/>
-            <ellipse cx="110" cy="178" rx="10" ry="4" fill="rgba(200,146,42,.2)"/>
-            <!-- glow from center -->
-            <ellipse cx="110" cy="185" rx="28" ry="10" fill="rgba(200,146,42,.08)"/>
-            <ellipse cx="110" cy="188" rx="50" ry="16" fill="rgba(200,146,42,.05)"/>
-            <!-- decorative circles -->
-            <circle cx="110" cy="90" r="4" fill="#C8922A" opacity=".4"/>
-            <circle cx="110" cy="90" r="8" stroke="#C8922A" stroke-width="1" fill="none" opacity=".2"/>
-          </svg>
-        </div>
-      </div>
-    </div>
-    <div class="hero__scroll">
-      <span>Scroll</span>
-      <div class="hero__scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- CATEGORIES -->
-  <section class="section" id="produse">
-    <div class="container">
-      <div class="section__header">
-        <p class="section__label">Ce oferim</p>
-        <h2 class="section__title">Produse & Categorii</h2>
-        <p class="section__desc">O gamă completă de soluții de iluminat pentru orice spațiu, de la lustre elegante până la spoturi LED eficiente energetic.</p>
-      </div>
-      <div class="categories">
-
-        <div class="category-card">
-          <div class="category-card__icon">
-            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="20" r="10" stroke="currentColor" stroke-width="2"/><path d="M24 30v6M18 36h12M20 10l-3-4M28 10l3-4M12 20H8M40 20h-4M14.5 28.5l-3 3M33.5 28.5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Iluminat Interior</h3>
-          <p>Lustre, plafoniere, candelabre, aplice, veioze și corpuri suspendate pentru orice stil de interior.</p>
-          <ul class="category-card__list">
-            <li>Lustre & candelabre</li>
-            <li>Plafoniere & spoturi</li>
-            <li>Aplice de perete</li>
-            <li>Veioze & lampadare</li>
-          </ul>
-        </div>
-
-        <div class="category-card">
-          <div class="category-card__icon">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M10 38h28M16 38v4M32 38v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M24 14a10 10 0 100 20 10 10 0 000-20z" stroke="currentColor" stroke-width="2"/><path d="M24 6v4M6 24h4M38 24h4M10.5 10.5l2.8 2.8M37.5 10.5l-2.8 2.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Iluminat Exterior</h3>
-          <p>Soluții rezistente la intemperii pentru fațade, grădini, alei și parcări.</p>
-          <ul class="category-card__list">
-            <li>Felinare & aplice exterior</li>
-            <li>Spoturi & proiectoare</li>
-            <li>Lumini solare</li>
-            <li>Senzori de mișcare</li>
-          </ul>
-        </div>
-
-        <div class="category-card">
-          <div class="category-card__icon">
-            <svg viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="18" rx="8" ry="10" stroke="currentColor" stroke-width="2"/><path d="M16 26c0 4.4 3.6 8 8 8s8-3.6 8-8" stroke="currentColor" stroke-width="2"/><path d="M20 34v4h8v-4" stroke="currentColor" stroke-width="2"/></svg>
-          </div>
-          <h3>Becuri LED</h3>
-          <p>Becuri economice și decorative pentru toate tipurile de socluri, eficiență maximă.</p>
-          <ul class="category-card__list">
-            <li>LED E27 & E14</li>
-            <li>Becuri decorative</li>
-            <li>Filament vintage</li>
-            <li>Smart bulbs</li>
-          </ul>
-        </div>
-
-        <div class="category-card">
-          <div class="category-card__icon">
-            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="14" width="32" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 34v4M32 34v4M14 38h20M20 22h8M24 20v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Accesorii Electrice</h3>
-          <p>Tot ce ai nevoie pentru instalații electrice și sistemele de iluminat.</p>
-          <ul class="category-card__list">
-            <li>Prize & întrerupătoare</li>
-            <li>Cabluri & conductori</li>
-            <li>Dimere & timere</li>
-            <li>Transformatoare</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section section--warm" id="despre">
-    <div class="container">
-      <div class="about">
-        <div class="about__text">
-          <p class="section__label">Despre noi</p>
-          <h2 class="section__title">Pasiune pentru lumină din inima Sucevei</h2>
-          <div class="about__divider"></div>
-          <p>ElsaRova este magazinul tău de încredere pentru corpuri de iluminat și materiale electrice din Suceava. Oferim produse de calitate pentru amenajări rezidențiale și comerciale, cu o gamă variată ce satisface orice stil și buget.</p>
-          <p>Fie că îți dorești o lustră elegantă pentru living, spoturi LED pentru birou sau soluții de iluminat pentru grădina ta, echipa noastră îți stă la dispoziție cu sfaturi personalizate.</p>
-          <div class="about__stats">
-            <div class="stat">
-              <span class="stat__num">500<span>+</span></span>
-              <span class="stat__label">Produse disponibile</span>
-            </div>
-            <div class="stat">
-              <span class="stat__num">10<span>+</span></span>
-              <span class="stat__label">Ani de experiență</span>
-            </div>
-            <div class="stat">
-              <span class="stat__num">24/7</span>
-              <span class="stat__label">Suport tractări</span>
-            </div>
-          </div>
-        </div>
-        <div class="about__visual">
-          <div class="about__card">
-            <span class="about__card-label">De ce să alegi ElsaRova</span>
-            <div class="about__card-title">Calitate &amp; Serviciu</div>
-            <div class="about__card-sub">Suceava, din 2010</div>
-            <div class="about__card-items">
-              <div class="about__card-item">
-                <div class="about__card-item-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                </div>
-                <div class="about__card-item-text"><strong>Produse certificate</strong><br>Toate produsele respectă standardele EU</div>
-              </div>
-              <div class="about__card-item">
-                <div class="about__card-item-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                </div>
-                <div class="about__card-item-text"><strong>Consiliere gratuită</strong><br>Te ajutăm să alegi soluția potrivită</div>
-              </div>
-              <div class="about__card-item">
-                <div class="about__card-item-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                </div>
-                <div class="about__card-item-text"><strong>Livrare locală</strong><br>Livrăm în Suceava și împrejurimi</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRACTARI CTA -->
-  <section class="tractari-cta">
-    <div class="container">
-      <div class="tractari-cta__inner">
-        <div class="tractari-cta__icon">
-          <svg viewBox="0 0 64 64" fill="none"><path d="M4 40h36V28L30 16H4V40z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M40 40h16l4-8v-8h-20v16z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M40 24h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="44" r="5" stroke="currentColor" stroke-width="2.5"/><circle cx="50" cy="44" r="5" stroke="currentColor" stroke-width="2.5"/></svg>
-        </div>
-        <div class="tractari-cta__body">
-          <h2>Tractări Auto &amp; Utilaje Ușoare</h2>
-          <p>Servicii de tractare și transport vehicule în Suceava și împrejurimi — disponibili zi și noapte.</p>
-        </div>
-        <div class="tractari-cta__cta">
-          <a href="https://tractari.elsarova.ro" class="btn btn--gold">
-            Vezi detalii
-            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section section--cream" id="contact">
-    <div class="container">
-      <div class="section__header">
-        <p class="section__label">Găsește-ne</p>
-        <h2 class="section__title">Contact</h2>
-      </div>
-      <div class="contact">
-        <div class="contact__info">
-          <div class="contact__item">
-            <div class="contact__item-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15.92z"/></svg>
-            </div>
-            <div>
-              <span class="contact__item-label">Telefon</span>
-              <a href="tel:0744350851" class="contact__item-value">0744 350 851</a>
-            </div>
-          </div>
-          <div class="contact__item">
-            <div class="contact__item-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            <div>
-              <span class="contact__item-label">Email</span>
-              <a href="mailto:elsarova@gmail.com" class="contact__item-value">elsarova@gmail.com</a>
-            </div>
-          </div>
-          <div class="contact__item">
-            <div class="contact__item-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div>
-              <span class="contact__item-label">Adresă</span>
-              <span class="contact__item-value">Strada Universității 28A<br>Suceava, România</span>
-            </div>
-          </div>
-          <div class="contact__item">
-            <div class="contact__item-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-            </div>
-            <div>
-              <span class="contact__item-label">Facebook</span>
-              <a href="https://facebook.com/elsarova" target="_blank" rel="noopener" class="contact__item-value">ElsaRova</a>
-            </div>
-          </div>
-        </div>
-        <div class="contact__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.0!2d26.25!3d47.65!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDM5JzAwLjAiTiAyNsKwMTUnMDAuMCJF!5e0!3m2!1sro!2sro!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Locație ElsaRova Suceava"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand footer__col">
-          <span class="logo-text">Elsa<span class="logo-accent">Rova</span></span>
-          <span class="logo-sub">Electrice Suceava</span>
-          <p>Corpuri de iluminat și accesorii electrice de calitate pentru orice spațiu.</p>
-        </div>
-        <div class="footer__col">
-          <h4>Navigare</h4>
-          <a href="#produse">Produse</a>
-          <a href="#despre">Despre noi</a>
-          <a href="#contact">Contact</a>
-          <a href="https://tractari.elsarova.ro">Tractări Auto</a>
-        </div>
-        <div class="footer__col">
-          <h4>Contact</h4>
-          <a href="tel:0744350851">0744 350 851</a>
-          <a href="mailto:elsarova@gmail.com">elsarova@gmail.com</a>
-          <span>Str. Universității 28A, Suceava</span>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span>&copy; 2025 ElsaRova. Toate drepturile rezervate.</span>
-        <span>Suceava, România</span>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const nav = document.getElementById('nav');
-    const toggle = document.getElementById('navToggle');
-    const links = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => {
-      links.classList.toggle('nav__links--open');
-      toggle.classList.toggle('nav__toggle--open');
-    });
-    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      links.classList.remove('nav__links--open');
-      toggle.classList.remove('nav__toggle--open');
-    }));
-  </script>
-</body>
-</html>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>

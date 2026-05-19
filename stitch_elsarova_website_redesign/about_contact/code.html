@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About &amp; Contact | ELSAROVA LIGHTING</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#93000a",
+                        "on-secondary-fixed": "#1a1b20",
+                        "inverse-surface": "#fddbd7",
+                        "surface-container-lowest": "#1a0a08",
+                        "signature-red": "#E31E24",
+                        "onyx-base": "#121317",
+                        "primary": "#ffb4ab",
+                        "onyx-surface": "#1C1D21",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-high": "#392523",
+                        "on-tertiary-container": "#fbfcff",
+                        "surface": "#200f0d",
+                        "on-primary-container": "#fffafa",
+                        "surface-bright": "#493431",
+                        "tertiary-fixed-dim": "#8ecdff",
+                        "on-surface-variant": "#e7bdb8",
+                        "on-tertiary-fixed": "#001e30",
+                        "secondary": "#c7c6cb",
+                        "secondary-fixed-dim": "#c7c6cb",
+                        "muted-gray": "#808080",
+                        "on-tertiary-fixed-variant": "#004b71",
+                        "on-primary-fixed": "#410002",
+                        "surface-tint": "#ffb4ab",
+                        "crisp-white": "#FFFFFF",
+                        "surface-dim": "#200f0d",
+                        "primary-fixed": "#ffdad6",
+                        "on-primary": "#690006",
+                        "on-surface": "#fddbd7",
+                        "on-secondary-fixed-variant": "#46464b",
+                        "secondary-container": "#46464b",
+                        "tertiary": "#8ecdff",
+                        "surface-variant": "#45302d",
+                        "surface-container-low": "#291715",
+                        "on-error": "#690005",
+                        "outline": "#ae8883",
+                        "primary-container": "#e31e24",
+                        "inverse-on-surface": "#402b29",
+                        "background": "#200f0d",
+                        "on-secondary-container": "#b5b4ba",
+                        "inverse-primary": "#c00014",
+                        "on-primary-fixed-variant": "#93000d",
+                        "outline-variant": "#5d3f3c",
+                        "on-tertiary": "#00344f",
+                        "tertiary-container": "#007bb5",
+                        "on-secondary": "#2f3035",
+                        "surface-container": "#2d1b19",
+                        "tertiary-fixed": "#cbe6ff",
+                        "secondary-fixed": "#e3e2e7",
+                        "primary-fixed-dim": "#ffb4ab",
+                        "error": "#ffb4ab",
+                        "on-background": "#fddbd7",
+                        "surface-container-highest": "#45302d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "160px",
+                        "margin-mobile": "20px",
+                        "gutter": "32px",
+                        "unit": "8px",
+                        "container-max": "1440px",
+                        "margin-desktop": "64px",
+                        "margin-tablet": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "label-caps": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-lg": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #200f0d;
+            color: #fddbd7;
+            overflow-x: hidden;
+        }
+        .editorial-image-reveal {
+            clip-path: inset(0 0 100% 0);
+            transition: clip-path 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        .editorial-image-reveal.visible {
+            clip-path: inset(0 0 0% 0);
+        }
+    </style>
+</head>
+<body class="bg-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md dark:bg-background/80 border-b border-crisp-white/10">
+<div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold tracking-tighter text-crisp-white">
+                ELSAROVA
+            </div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="hover:text-signature-red transition-colors duration-300 text-crisp-white font-label-caps" href="#">Interior</a>
+<a class="hover:text-signature-red transition-colors duration-300 text-crisp-white font-label-caps" href="#">Exterior</a>
+<a class="text-signature-red border-b border-signature-red pb-1 font-label-caps" href="#">About</a>
+<button class="ml-4 px-6 py-2 bg-crisp-white text-background font-label-caps hover:bg-signature-red hover:text-crisp-white transition-all duration-300">
+                    Contact Us
+                </button>
+</div>
+<button class="md:hidden text-crisp-white">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-gap">
+<div class="md:col-span-7 flex flex-col justify-center order-2 md:order-1">
+<h1 class="font-display-lg text-display-lg text-crisp-white mb-8">
+                    HERITAGE IN <span class="text-signature-red">LIGHT</span>.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    For over two decades, ElsaRova has defined the intersection of industrial precision and luxurious illumination. Our journey began with a vision to transform raw materials into sculptural light forms that command attention in any architectural space.
+                </p>
+</div>
+<div class="md:col-span-5 order-1 md:order-2 flex items-center justify-center p-8 bg-onyx-surface border border-crisp-white/10">
+<img alt="ELSAROVA Logo" class="max-w-full h-auto grayscale brightness-200" src="https://lh3.googleusercontent.com/aida/ADBb0ui3dAu1xBH1KhS-sh1XSAXlj0TwwKaBj57QapDanU6IZyjuPQ8-Q9cPD7PJRWqV4VNkUZ5eYvewILqf9wspsSi6M0HbkJfVjHd1WPzEFW0MCLAVUULjrmvYcb3PQeQKdNF0k6NfcRWro5O-HuTMBZ75W-ZJRtZyv_JQF54IQf1wjhx6SnKfC2GvKSYO-2I9SREmAPRN9iXaZzuYRD6jHiPhLcunqAuN6u05jxpmql6WHUMvfSufqIkAGXQs"/>
+</div>
+</section>
+<!-- Showroom Detail -->
+<section class="bg-onyx-surface py-section-gap border-y border-crisp-white/5">
+<div class="px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="relative overflow-hidden group">
+<div class="editorial-image-reveal visible aspect-[4/5] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="A sophisticated industrial-style lighting showroom in Suceava. High ceilings with exposed dark beams and spotlighting illuminate minimalist luxury lamps. The interior design features deep charcoal walls and polished concrete floors, creating a moody, nocturnal atmosphere punctuated by crisp white light and subtle red accents. High-end architectural lighting fixtures are displayed as works of art." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX6P9CN9y6Pzb5qz5ni1_hP01qhhUM_28pLsUYenWY-zAge9M4ptZriAkFTVfziDuS8-H-h0QEfva8Vr_QbSR8Bh_V1NpEskuSaopHHhJTsvLDGM5KsCSNIWu5D0GOrxCddf3XMbtnlOlN0HuqALNSNbk2xtf8mJtpKo0oDN15fLwOP2WGj6DmKFaYn-Ll9V1eVSFcUyeWU6xpHi18Azh7zImHxasynkLJWBrWuwsPFUoyUAGPakc0W7dy3J0xPHWXoI-n0CDM_MTm"/>
+</div>
+<div class="absolute bottom-10 left-10 text-crisp-white">
+<span class="font-label-caps text-label-caps block mb-2">LOCATION</span>
+<h3 class="font-headline-md text-headline-md">SUCEAVA SHOWROOM</h3>
+</div>
+</div>
+<div class="md:pl-16 space-y-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-crisp-white mb-6 uppercase tracking-tight">The Space</h2>
+<p class="font-body-md text-body-md text-muted-gray mb-8">
+                            Located in the heart of Suceava, our showroom is more than a retail space—it's a curated gallery of light. Experience the tactile quality of our industrial finishes and the precision of our optical systems in an environment designed for architects and connoisseurs.
+                        </p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-signature-red" data-icon="location_on">location_on</span>
+<div>
+<span class="font-label-caps text-label-caps text-crisp-white block">ADDRESS</span>
+<p class="font-body-md text-body-md text-on-surface">Strada Universității 28A, Suceava</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-signature-red" data-icon="phone">phone</span>
+<div>
+<span class="font-label-caps text-label-caps text-crisp-white block">PHONE</span>
+<p class="font-body-md text-body-md text-on-surface">0744 350 851</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-signature-red" data-icon="mail">mail</span>
+<div>
+<span class="font-label-caps text-label-caps text-crisp-white block">EMAIL</span>
+<p class="font-body-md text-body-md text-on-surface">elsarova@gmail.com</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Towing Transition Section -->
+<section class="relative h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-black/70 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover grayscale opacity-50" data-alt="A heavy-duty professional tow truck at night on a dark highway, illuminated by intense red and white flashing safety lights. The scene is high-contrast and dramatic, emphasizing industrial strength and reliability. The vehicle is sleek and powerful, emerging from the shadows in a gritty, cinematic style that matches the ElsaRova brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbOkjJIYWGD9UiwiPM0qd-Z6Ty0FcUcKZ9dKalr48VtJIo8_bqQlzmimiGlEySad5INQwV6yRyKq3DRuT-swLAZvJK7nvdmvc9q3rSm4NRAHJpQQgUq1oJGyYs2kZpueDEg-GFuKut4DVls_Y3Vk38oRAUibYOzUfxuAsH0EzBr3P-mQFrDIZXEf0lJ6jFlOAZ95cjsB49Qfib1AL-K-JxjL6YqcgWCDxuz9uHSD1CW9ngMU4Z5T1auTBNczYch0IMUFcbY7gkowRW"/>
+<div class="relative z-20 px-margin-desktop max-w-4xl text-center">
+<span class="font-label-caps text-label-caps text-signature-red mb-4 block tracking-widest">SERVICE UPDATE</span>
+<h2 class="font-display-lg text-display-lg text-crisp-white mb-6 uppercase">TOWING &amp; RECOVERY</h2>
+<p class="font-body-lg text-body-lg text-crisp-white/80 mb-10">
+                    To better serve our commercial clients, our dedicated towing and recovery division has transitioned to a specialized platform. For 24/7 industrial-strength assistance, please visit our new home.
+                </p>
+<a class="inline-flex items-center gap-4 bg-signature-red text-crisp-white px-10 py-5 font-headline-md text-headline-md font-bold hover:scale-105 active:scale-95 transition-all duration-300" href="https://tractari.elsarova.ro" target="_blank">
+                    tractari.elsarova.ro
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Form Section -->
+<section class="px-margin-desktop max-w-container-max mx-auto py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4">
+<h2 class="font-headline-lg text-headline-lg text-crisp-white mb-4 uppercase">Inquiry</h2>
+<p class="font-body-md text-body-md text-muted-gray">Collaborate with our design team for custom architectural lighting solutions.</p>
+</div>
+<div class="md:col-span-8">
+<form class="space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="relative">
+<label class="font-label-caps text-label-caps text-muted-gray block mb-2">FULL NAME</label>
+<input class="w-full bg-transparent border-b border-crisp-white/20 focus:border-signature-red outline-none py-2 text-crisp-white transition-colors duration-300" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label-caps text-label-caps text-muted-gray block mb-2">EMAIL ADDRESS</label>
+<input class="w-full bg-transparent border-b border-crisp-white/20 focus:border-signature-red outline-none py-2 text-crisp-white transition-colors duration-300" type="email"/>
+</div>
+</div>
+<div class="relative">
+<label class="font-label-caps text-label-caps text-muted-gray block mb-2">MESSAGE</label>
+<textarea class="w-full bg-transparent border-b border-crisp-white/20 focus:border-signature-red outline-none py-2 text-crisp-white transition-colors duration-300" rows="4"></textarea>
+</div>
+<div class="flex justify-end">
+<button class="px-12 py-4 bg-crisp-white text-background font-label-caps hover:bg-signature-red hover:text-crisp-white transition-all duration-300 uppercase tracking-widest">
+                                Send Message
+                            </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Map Location Placeholder -->
+<section class="w-full h-[500px] bg-surface-container-low grayscale" data-location="Suceava, Romania">
+<div class="w-full h-full flex items-center justify-center border-t border-crisp-white/10 opacity-40">
+<span class="material-symbols-outlined text-6xl" data-icon="map">map</span>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-onyx-surface dark:bg-onyx-surface border-t border-crisp-white/10 w-full py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col gap-6">
+<div class="font-headline-md text-headline-md text-crisp-white">ELSAROVA</div>
+<p class="font-body-md text-body-md text-muted-gray max-w-xs">
+                    Industrial lighting solutions for modern architectural environments. Quality engineered, luxury designed.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-crisp-white mb-2">NAVIGATION</span>
+<a class="text-muted-gray hover:text-crisp-white transition-colors font-label-caps" href="#">Interior</a>
+<a class="text-muted-gray hover:text-crisp-white transition-colors font-label-caps" href="#">Exterior</a>
+<a class="text-signature-red transition-colors font-label-caps" href="#">About</a>
+<a class="text-muted-gray hover:text-crisp-white transition-colors font-label-caps" href="https://tractari.elsarova.ro">TOWING &amp; RECOVERY</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-crisp-white mb-2">CONTACT</span>
+<p class="text-muted-gray font-body-md">Strada Universității 28A, Suceava</p>
+<p class="text-muted-gray font-body-md">0744 350 851</p>
+<p class="text-muted-gray font-body-md">elsarova@gmail.com</p>
+</div>
+</div>
+<div class="px-margin-desktop max-w-container-max mx-auto mt-20 pt-8 border-t border-crisp-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-muted-gray font-label-caps text-[10px]">© 2024 ELSAROVA LIGHTING. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-6">
+<a class="material-symbols-outlined text-muted-gray hover:text-signature-red" data-icon="share" href="#">share</a>
+<a class="material-symbols-outlined text-muted-gray hover:text-signature-red" data-icon="language" href="#">language</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.editorial-image-reveal').forEach(el => observer.observe(el));
+
+        // Smooth header shrinking
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-6');
+            } else {
+                nav.classList.add('py-6');
+                nav.classList.remove('py-4');
+            }
+        });
+    </script>
+</body></html>

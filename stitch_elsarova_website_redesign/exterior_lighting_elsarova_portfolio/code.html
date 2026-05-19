@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Exterior Lighting Portfolio | ElsaRova</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "on-tertiary-fixed": "#261900",
+                  "surface-dim": "#121317",
+                  "tertiary-fixed": "#ffdea5",
+                  "error-container": "#93000a",
+                  "secondary": "#9acbff",
+                  "outline-variant": "#5d3f3c",
+                  "on-tertiary-container": "#fffaf9",
+                  "surface-container-low": "#1a1b20",
+                  "on-error": "#690005",
+                  "primary-container": "#e31e24",
+                  "inverse-on-surface": "#2f3035",
+                  "inverse-surface": "#e3e2e8",
+                  "secondary-container": "#3a96e2",
+                  "on-secondary-fixed-variant": "#004a79",
+                  "on-primary-fixed-variant": "#93000d",
+                  "on-tertiary-fixed-variant": "#5d4201",
+                  "surface-container": "#1f1f24",
+                  "primary-fixed": "#ffdad6",
+                  "brand-red": "#E31E24",
+                  "surface": "#121317",
+                  "on-surface": "#e3e2e8",
+                  "surface-tint": "#ffb4ab",
+                  "on-primary-container": "#fffafa",
+                  "on-surface-variant": "#e7bdb8",
+                  "tertiary-container": "#8f6f2d",
+                  "surface-onyx": "#1F2124",
+                  "on-background": "#e3e2e8",
+                  "surface-bright": "#38393e",
+                  "on-primary-fixed": "#410002",
+                  "surface-ebony": "#0B0C10",
+                  "outline": "#ae8883",
+                  "secondary-fixed-dim": "#9acbff",
+                  "secondary-fixed": "#cfe4ff",
+                  "on-primary": "#690006",
+                  "surface-variant": "#343439",
+                  "background": "#121317",
+                  "on-secondary": "#003355",
+                  "accent-gold": "#C5A059",
+                  "towing-blue": "#007BC5",
+                  "primary-fixed-dim": "#ffb4ab",
+                  "surface-container-highest": "#343439",
+                  "on-secondary-container": "#002c4b",
+                  "surface-container-lowest": "#0d0e12",
+                  "error": "#ffb4ab",
+                  "surface-container-high": "#292a2e",
+                  "tertiary": "#e9c176",
+                  "inverse-primary": "#c00014",
+                  "primary": "#ffb4ab",
+                  "on-error-container": "#ffdad6",
+                  "on-secondary-fixed": "#001d34",
+                  "on-tertiary": "#412d00",
+                  "tertiary-fixed-dim": "#e9c176"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.125rem",
+                  "lg": "0.25rem",
+                  "xl": "0.5rem",
+                  "full": "0.75rem"
+          },
+          "spacing": {
+                  "container-max": "1440px",
+                  "margin-desktop": "64px",
+                  "base": "8px",
+                  "margin-mobile": "16px",
+                  "section-gap": "120px",
+                  "gutter": "24px"
+          },
+          "fontFamily": {
+                  "display-lg-mobile": ["Manrope"],
+                  "headline-lg": ["Manrope"],
+                  "technical-label": ["JetBrains Mono"],
+                  "display-lg": ["Manrope"],
+                  "body-lg": ["Inter"],
+                  "body-md": ["Inter"],
+                  "headline-sm": ["Manrope"]
+          },
+          "fontSize": {
+                  "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                  "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                  "technical-label": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                  "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                  "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                  "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                  "headline-sm": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-nav {
+      backdrop-filter: blur(20px);
+      background: rgba(18, 19, 23, 0.8);
+    }
+    .technical-stroke {
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .hover-stroke:hover {
+      border-color: #E31E24;
+    }
+    .asymmetric-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+    }
+    @media (max-width: 768px) {
+      .asymmetric-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-brand-red selection:text-white">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 glass-nav border-b border-white/10">
+<div class="max-w-container-max mx-auto flex justify-between items-center px-margin-desktop py-base">
+<div class="font-display-lg text-headline-sm md:text-headline-lg font-bold text-brand-red">ElsaRova</div>
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="font-headline-sm text-headline-sm uppercase tracking-widest text-on-surface/70 hover:text-on-surface transition-colors" href="#">Interior Lighting</a>
+<a class="font-headline-sm text-headline-sm uppercase tracking-widest text-brand-red border-b-2 border-brand-red pb-1" href="#">Exterior Lighting</a>
+<a class="font-headline-sm text-headline-sm uppercase tracking-widest text-on-surface/70 hover:text-on-surface transition-colors" href="#">Towing Services</a>
+<a class="font-headline-sm text-headline-sm uppercase tracking-widest text-on-surface/70 hover:text-on-surface transition-colors" href="#">About Us</a>
+</nav>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex gap-4 items-center">
+<span class="material-symbols-outlined text-brand-red" data-icon="location_on">location_on</span>
+<span class="material-symbols-outlined text-brand-red" data-icon="call">call</span>
+</div>
+<button class="bg-primary-container text-on-primary-container font-headline-sm text-headline-sm px-6 py-3 uppercase tracking-widest transition-transform active:scale-95">
+          Emergency Towing
+        </button>
+</div>
+</div>
+</header>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-section-gap">
+<div class="asymmetric-grid gap-gutter">
+<div class="flex flex-col justify-center">
+<span class="font-technical-label text-technical-label text-accent-gold mb-4 uppercase">Architectural Excellence</span>
+<h1 class="font-display-lg text-display-lg mb-8 leading-tight">Mastering the Art of <span class="text-brand-red">Exterior</span> Illumination.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            At ElsaRova, we blend technical precision with aesthetic refinement. Our exterior collection is engineered for extreme durability without compromising on the sophisticated showroom aesthetic your property deserves.
+          </p>
+</div>
+<div class="relative group overflow-hidden technical-stroke aspect-[4/5]">
+<img alt="Wall Lamp" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" src="https://lh3.googleusercontent.com/aida/ADBb0uikKvbV54Wue3KRuIuOEQPQnXH5UC3XnToh4N7pjt_LMStCyXBxUhRLckndik5xpIna7QO6ZW2T1bY29AwkOlOfAXJKJi72L9U8rA8diqC6NoV-2ZpHRtD2oP-VLM06QNqB7gBUx36ARM29qA_4dbpCcII710OF81m-7vD5QFCGjeanmCQFhE3gXQnKCRhlGRmPkiaG7LYwvQg035lyPUtDPsI5xcPTqgKUMSXhebZXJQsERWkdeOE-oxNd"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-40"></div>
+<div class="absolute bottom-base left-base bg-surface-onyx/80 backdrop-blur-md px-4 py-2 border border-white/10">
+<span class="font-technical-label text-technical-label text-white uppercase">Series I: Nordic Wall Luminaire</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specs Bento Grid -->
+<section class="bg-surface-dim py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Column 1: Feature -->
+<div class="md:col-span-2 technical-stroke p-margin-desktop flex flex-col justify-between hover-stroke transition-colors">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-6">Designed for Resilience</h2>
+<div class="grid grid-cols-2 gap-gutter mb-8">
+<div class="space-y-2">
+<span class="font-technical-label text-technical-label text-accent-gold">IP RATING</span>
+<p class="font-body-md text-body-md">IP65 Certified - Dust-tight and protected against water jets.</p>
+</div>
+<div class="space-y-2">
+<span class="font-technical-label text-technical-label text-accent-gold">MATERIAL</span>
+<p class="font-body-md text-body-md">Marine-grade die-cast aluminum with UV-resistant finish.</p>
+</div>
+</div>
+</div>
+<div class="relative aspect-video overflow-hidden">
+<div class="absolute inset-0 bg-brand-red/10 mix-blend-overlay"></div>
+<img class="w-full h-full object-cover grayscale opacity-50" data-alt="A close-up technical shot of a high-end metal light fixture's textured surface. Water droplets are beaded on the surface to demonstrate its IP65 rating. The lighting is cinematic and dark, emphasizing the metallic sheen and industrial precision of the component. Deep blacks and subtle red highlights dominate the frame." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu_gab4BDRUtv1xUoxR4Jp_3gXBPVmFMeUA0VvyA8IjYCsbk_aIkVztUSJYn23Z-edhR5YKOJXQ1QtiljtPcrJdvcU7CYB46MBLjvn1desB-HOO2IOY0JZOnCQH-fymX9ccFMpG6H8xeSdUJc5FVFqD3aVxXt7QowcPAJ4Lj8NqYDE4goXfT0Y99quuQV8vB_WxVsXch2eGDJfEV1gsywg3HaEQEP8bf04cJrahRls1iqjfFbXktlEtYfYe89K2-9B4zD3DQlHSKhF"/>
+</div>
+</div>
+<!-- Column 2: Spotlight -->
+<div class="technical-stroke p-base bg-surface-onyx flex flex-col hover-stroke transition-colors">
+<div class="flex-1 overflow-hidden">
+<img alt="Projector Light" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uh53IcwlVX7sQzo3li3dWCvn46Pvhp8yE834VyuFSLeIZcEa1xFPnXs9hSZrWzyKbeLx0JEXjVnhV8tMwSLQM_hLbpeUdFCy3WlwHHLB2i0u7T5Seq9JMDFPsrTOrpYHU21mWtSAC4XPRFDm9VYMSu8MGC3rJ0Fw5ALpaV5nc7cY7ATauaGslzpIoSBof7BPYt816Cz3zqbXDQwU9fyCeHhaVpBbKiEqmxelcLB0vX8VJBbsJ3qWFOUqZY"/>
+</div>
+<div class="p-6">
+<span class="font-technical-label text-technical-label text-brand-red mb-2 block">PROJECTOR SERIES</span>
+<h3 class="font-headline-sm text-headline-sm mb-4 uppercase">Industrial Projector XP-400</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Precision optics for large scale landscape illumination.</p>
+<div class="mt-6 flex gap-2">
+<span class="border border-outline-variant px-3 py-1 font-technical-label text-technical-label">5000 LUMENS</span>
+<span class="border border-outline-variant px-3 py-1 font-technical-label text-technical-label">4000K</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Garden & Infrastructure -->
+<section class="max-w-container-max mx-auto px-margin-desktop py-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="aspect-square bg-surface-onyx technical-stroke p-12 flex items-center justify-center">
+<img alt="Garden Post" class="max-h-full transition-transform duration-700 hover:rotate-2" src="https://lh3.googleusercontent.com/aida/ADBb0ug0yx0M5wNIuGXMeBD28m93_gQc3jnFkfIl0TwvhU1W9O6IkT1F8rdjYPJR65hgNTtBe4-sehwsNa8i5_T0PX5oJr4D6JbTDlKk8prG_TvOUayr8x3MywvsjO4USeuFsrUvpedgxOZsYo9AtVlo1MFTEXgqJakU9PtF2pCGXqCa_yiINVVnRlBa71EXYj8DbCXSetrc6HUg8My2fm_rxgQYUi2_V9sGnTJPkYdl5WGRoa1jgE4fRZlqjyg"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-2/3 technical-stroke bg-background p-8 hidden md:block">
+<p class="font-technical-label text-technical-label text-accent-gold mb-2">INFRASTRUCTURE</p>
+<p class="font-body-md text-body-md italic">"Integrating power solutions seamlessly into your landscape architecture."</p>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="font-display-lg text-headline-lg md:text-display-lg mb-8">Integrated Garden Solutions</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+            Our garden posts offer more than just illumination. We provide fully integrated technical columns featuring weatherproof power outlets, motion sensors, and smart controls, all housed within a surgical-grade stainless steel exterior.
+          </p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4 pb-6 border-b border-white/5">
+<span class="material-symbols-outlined text-brand-red" data-icon="shield">shield</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase">Corrosion Resistance</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Tested against saline environments for coastal durability.</p>
+</div>
+</li>
+<li class="flex items-start gap-4 pb-6 border-b border-white/5">
+<span class="material-symbols-outlined text-brand-red" data-icon="bolt">bolt</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase">Smart Integration</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Fully compatible with DALI and Zigbee automation systems.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Professional Service CTA -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-section-gap">
+<div class="bg-surface-ebony border border-brand-red/30 p-12 md:p-24 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-brand-red/5 rounded-full blur-[120px]"></div>
+<h2 class="font-display-lg text-headline-lg md:text-display-lg mb-6">Expert Consultation</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
+          Need technical guidance for your outdoor project? Our lighting engineers provide comprehensive photometric studies and durability assessments.
+        </p>
+<button class="bg-white text-surface-ebony font-headline-sm text-headline-sm px-12 py-5 uppercase tracking-widest hover:bg-brand-red hover:text-white transition-all duration-300">
+          Request Technical Catalog
+        </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-ebony border-t border-outline-variant">
+<div class="max-w-container-max mx-auto py-section-gap px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1">
+<div class="font-display-lg text-headline-sm text-brand-red mb-6">ElsaRova</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Elite lighting solutions and heavy-duty towing services. Where aesthetics meet absolute reliability.
+        </p>
+</div>
+<div>
+<h5 class="font-headline-sm text-headline-sm uppercase mb-6 text-accent-gold">Solutions</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors duration-200" href="#">Interior Lighting</a></li>
+<li><a class="font-body-md text-body-md text-brand-red font-bold transition-colors duration-200" href="#">Exterior Lighting</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors duration-200" href="#">Towing Services</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline-sm text-headline-sm uppercase mb-6 text-accent-gold">Company</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors duration-200" href="#">About Us</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors duration-200" href="#">Contact</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors duration-200" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline-sm text-headline-sm uppercase mb-6 text-accent-gold">Contact Us</h5>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+          Strada Universitatii 28A,<br/>Suceava, Romania
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          +40 (0) 722 000 000<br/>contact@elsarova.com
+        </p>
+</div>
+<div class="col-span-1 md:col-span-4 mt-12 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 ElsaRova. Strada Universitatii 28A, Suceava. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-brand-red" data-icon="share">share</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-brand-red" data-icon="alternate_email">alternate_email</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Micro-interactions for scrolling reveal
+    document.addEventListener('DOMContentLoaded', () => {
+      const observerOptions = {
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('opacity-100');
+            entry.target.classList.remove('translate-y-10', 'opacity-0');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.add('transition-all', 'duration-1000', 'translate-y-10', 'opacity-0');
+        observer.observe(section);
+      });
+    });
+  </script>
+</body></html>
