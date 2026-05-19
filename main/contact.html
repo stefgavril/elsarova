@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ro"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Despre Noi &amp; Contact | ELSAROVA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#93000a",
+                        "on-secondary-fixed": "#1a1b20",
+                        "inverse-surface": "#fddbd7",
+                        "surface-container-lowest": "#1a0a08",
+                        "signature-red": "#E31E24",
+                        "onyx-base": "#121317",
+                        "primary": "#ffb4ab",
+                        "onyx-surface": "#1C1D21",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-high": "#392523",
+                        "on-tertiary-container": "#fbfcff",
+                        "surface": "#200f0d",
+                        "on-primary-container": "#fffafa",
+                        "surface-bright": "#493431",
+                        "tertiary-fixed-dim": "#8ecdff",
+                        "on-surface-variant": "#e7bdb8",
+                        "on-tertiary-fixed": "#001e30",
+                        "secondary": "#c7c6cb",
+                        "secondary-fixed-dim": "#c7c6cb",
+                        "muted-gray": "#808080",
+                        "on-tertiary-fixed-variant": "#004b71",
+                        "on-primary-fixed": "#410002",
+                        "surface-tint": "#ffb4ab",
+                        "crisp-white": "#FFFFFF",
+                        "surface-dim": "#200f0d",
+                        "primary-fixed": "#ffdad6",
+                        "on-primary": "#690006",
+                        "on-surface": "#fddbd7",
+                        "on-secondary-fixed-variant": "#46464b",
+                        "secondary-container": "#46464b",
+                        "tertiary": "#8ecdff",
+                        "surface-variant": "#45302d",
+                        "surface-container-low": "#291715",
+                        "on-error": "#690005",
+                        "outline": "#ae8883",
+                        "primary-container": "#e31e24",
+                        "inverse-on-surface": "#402b29",
+                        "background": "#200f0d",
+                        "on-secondary-container": "#b5b4ba",
+                        "inverse-primary": "#c00014",
+                        "on-primary-fixed-variant": "#93000d",
+                        "outline-variant": "#5d3f3c",
+                        "on-tertiary": "#00344f",
+                        "tertiary-container": "#007bb5",
+                        "on-secondary": "#2f3035",
+                        "surface-container": "#2d1b19",
+                        "tertiary-fixed": "#cbe6ff",
+                        "secondary-fixed": "#e3e2e7",
+                        "primary-fixed-dim": "#ffb4ab",
+                        "error": "#ffb4ab",
+                        "on-background": "#fddbd7",
+                        "surface-container-highest": "#45302d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "160px",
+                        "margin-mobile": "20px",
+                        "gutter": "32px",
+                        "unit": "8px",
+                        "container-max": "1440px",
+                        "margin-desktop": "64px",
+                        "margin-tablet": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "label-caps": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-lg": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #200f0d;
+            color: #fddbd7;
+            overflow-x: hidden;
+        }
+        .editorial-image-reveal {
+            clip-path: inset(0 0 100% 0);
+            transition: clip-path 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        .editorial-image-reveal.visible {
+            clip-path: inset(0 0 0% 0);
+        }
+    </style>
+</head>
+<body class="bg-background">
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md dark:bg-background/80 border-b border-crisp-white/10">
+<div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold tracking-tighter text-crisp-white" href="index.html">ELSAROVA</a>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="hover:text-signature-red transition-colors duration-300 text-crisp-white font-label-caps" href="interior.html">Interior</a>
+<a class="hover:text-signature-red transition-colors duration-300 text-crisp-white font-label-caps" href="exterior.html">Exterior</a>
+<a class="text-signature-red border-b border-signature-red pb-1 font-label-caps" href="contact.html">Despre noi</a>
+<a class="text-signature-red font-label-caps hover:text-crisp-white transition-colors duration-300" href="https://tractari.elsarova.ro" target="_blank">Tractări</a>
+</div>
+<a href="tel:0744350851" class="bg-crisp-white text-onyx-base px-6 py-2 font-label-caps hover:bg-signature-red hover:text-crisp-white transition-colors duration-300">0744 350 851</a>
+<button class="md:hidden text-crisp-white"><span class="material-symbols-outlined" data-icon="menu">menu</span></button>
+</div>
+</nav>
+<main class="pt-32">
+<section class="px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-gap">
+<div class="md:col-span-7 flex flex-col justify-center order-2 md:order-1">
+<h1 class="font-display-lg text-display-lg text-crisp-white mb-8">
+                    TRADIȚIE ÎN <span class="text-signature-red">LUMINĂ</span>.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    ElsaRova este un magazin specializat în corpuri de iluminat și materiale electrice din Suceava. De ani de zile aducem în casele și afacerile clienților noștri produse de calitate — de la lustre și aplice, până la spoturi și corpuri de iluminat exterior.
+                </p>
+</div>
+<div class="md:col-span-5 order-1 md:order-2 flex items-center justify-center p-8 bg-onyx-surface border border-crisp-white/10">
+<img alt="Logo ELSAROVA" class="max-w-full h-auto grayscale brightness-200" src="https://lh3.googleusercontent.com/aida/ADBb0ui3dAu1xBH1KhS-sh1XSAXlj0TwwKaBj57QapDanU6IZyjuPQ8-Q9cPD7PJRWqV4VNkUZ5eYvewILqf9wspsSi6M0HbkJfVjHd1WPzEFW0MCLAVUULjrmvYcb3PQeQKdNF0k6NfcRWro5O-HuTMBZ75W-ZJRtZyv_JQF54IQf1wjhx6SnKfC2GvKSYO-2I9SREmAPRN9iXaZzuYRD6jHiPhLcunqAuN6u05jxpmql6WHUMvfSufqIkAGXQs"/>
+</div>
+</section>
+<section class="bg-onyx-surface py-section-gap border-y border-crisp-white/5">
+<div class="px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="relative overflow-hidden group">
+<div class="editorial-image-reveal visible aspect-[4/5] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX6P9CN9y6Pzb5qz5ni1_hP01qhhUM_28pLsUYenWY-zAge9M4ptZriAkFTVfziDuS8-H-h0QEfva8Vr_QbSR8Bh_V1NpEskuSaopHHhJTsvLDGM5KsCSNIWu5D0GOrxCddf3XMbtnlOlN0HuqALNSNbk2xtf8mJtpKo0oDN15fLwOP2WGj6DmKFaYn-Ll9V1eVSFcUyeWU6xpHi18Azh7zImHxasynkLJWBrWuwsPFUoyUAGPakc0W7dy3J0xPHWXoI-n0CDM_MTm"/>
+</div>
+<div class="absolute bottom-10 left-10 text-crisp-white">
+<span class="font-label-caps text-label-caps block mb-2">LOCAȚIE</span>
+<h3 class="font-headline-md text-headline-md">SHOWROOM SUCEAVA</h3>
+</div>
+</div>
+<div class="md:pl-16 space-y-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-crisp-white mb-6 uppercase tracking-tight">Spațiul Nostru</h2>
+<p class="font-body-md text-body-md text-muted-gray mb-8">
+                            Situat în inima Sucevei, showroom-ul nostru este mai mult decât un spațiu comercial — este o galerie de lumini. Vino să descoperi calitatea materialelor și sistemele noastre de iluminat, concepute pentru case și afaceri cu exigențe ridicate.
+                        </p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-signature-red" data-icon="location_on">location_on</span>
+<div>
+<span class="font-label-caps text-label-caps text-crisp-white block">ADRESĂ</span>
+<p class="font-body-md text-body-md text-on-surface">Strada Universității 28A, Suceava</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-signature-red" data-icon="phone">phone</span>
+<div>
+<span class="font-label-caps text-label-caps text-crisp-white block">TELEFON</span>
+<p class="font-body-md text-body-md text-on-surface"><a class="hover:text-signature-red transition-colors" href="tel:0744350851">0744 350 851</a></p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-signature-red" data-icon="mail">mail</span>
+<div>
+<span class="font-label-caps text-label-caps text-crisp-white block">EMAIL</span>
+<p class="font-body-md text-body-md text-on-surface"><a class="hover:text-signature-red transition-colors" href="mailto:elsarova@gmail.com">elsarova@gmail.com</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="relative h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-black/70 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover grayscale opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbOkjJIYWGD9UiwiPM0qd-Z6Ty0FcUcKZ9dKalr48VtJIo8_bqQlzmimiGlEySad5INQwV6yRyKq3DRuT-swLAZvJK7nvdmvc9q3rSm4NRAHJpQQgUq1oJGyYs2kZpueDEg-GFuKut4DVls_Y3Vk38oRAUibYOzUfxuAsH0EzBr3P-mQFrDIZXEf0lJ6jFlOAZ95cjsB49Qfib1AL-K-JxjL6YqcgWCDxuz9uHSD1CW9ngMU4Z5T1auTBNczYch0IMUFcbY7gkowRW"/>
+<div class="relative z-20 px-margin-desktop max-w-4xl text-center">
+<span class="font-label-caps text-label-caps text-signature-red mb-4 block tracking-widest">SERVICII SPECIALIZATE</span>
+<h2 class="font-display-lg text-display-lg text-crisp-white mb-6 uppercase">TRACTĂRI &amp; RECUPERARE</h2>
+<p class="font-body-lg text-body-lg text-crisp-white/80 mb-10">
+                    Pentru a servi mai bine clienții noștri, serviciile de tractare auto fac parte dintr-o platformă dedicată. Pentru asistență disponibilă non-stop, vizitați pagina noastră de tractări.
+                </p>
+<a class="inline-flex items-center gap-4 bg-signature-red text-crisp-white px-10 py-5 font-headline-md text-headline-md font-bold hover:scale-105 active:scale-95 transition-all duration-300" href="https://tractari.elsarova.ro" target="_blank">
+                    tractari.elsarova.ro
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</section>
+<section class="px-margin-desktop max-w-container-max mx-auto py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4">
+<h2 class="font-headline-lg text-headline-lg text-crisp-white mb-4 uppercase">Trimite un Mesaj</h2>
+<p class="font-body-md text-body-md text-muted-gray">Contactează echipa noastră pentru informații despre corpuri de iluminat sau o ofertă personalizată.</p>
+</div>
+<div class="md:col-span-8">
+<form class="space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="relative">
+<label class="font-label-caps text-label-caps text-muted-gray block mb-2">NUME COMPLET</label>
+<input class="w-full bg-transparent border-b border-crisp-white/20 focus:border-signature-red outline-none py-2 text-crisp-white transition-colors duration-300" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label-caps text-label-caps text-muted-gray block mb-2">ADRESĂ EMAIL</label>
+<input class="w-full bg-transparent border-b border-crisp-white/20 focus:border-signature-red outline-none py-2 text-crisp-white transition-colors duration-300" type="email"/>
+</div>
+</div>
+<div class="relative">
+<label class="font-label-caps text-label-caps text-muted-gray block mb-2">MESAJ</label>
+<textarea class="w-full bg-transparent border-b border-crisp-white/20 focus:border-signature-red outline-none py-2 text-crisp-white transition-colors duration-300" rows="4"></textarea>
+</div>
+<div class="flex justify-end">
+<button class="px-12 py-4 bg-crisp-white text-background font-label-caps hover:bg-signature-red hover:text-crisp-white transition-all duration-300 uppercase tracking-widest">
+                                Trimite Mesaj
+                            </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<section class="w-full h-[500px]">
+<iframe src="https://maps.google.com/maps?q=Strada+Universit%C4%83%C8%9Bii+28A%2C+Suceava%2C+Rom%C3%A2nia&output=embed&z=16" width="100%" height="100%" style="border:0;filter:grayscale(20%);" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+</main>
+<footer class="bg-onyx-surface dark:bg-onyx-surface border-t border-crisp-white/10 w-full py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col gap-6">
+<div class="font-headline-md text-headline-md text-crisp-white font-bold">ELSAROVA</div>
+<p class="font-body-md text-body-md text-muted-gray max-w-xs">Magazin de corpuri de iluminat și materiale electrice din Suceava. Produse de calitate pentru acasă și afacerea ta.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-crisp-white/20 flex items-center justify-center hover:border-signature-red hover:text-signature-red transition-colors" href="https://www.facebook.com/profile.php?id=100063795933042" target="_blank" rel="noopener" aria-label="Facebook">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</a>
+<a class="w-10 h-10 border border-crisp-white/20 flex items-center justify-center hover:border-[#25D366] hover:text-[#25D366] transition-colors" href="https://wa.me/40744350851" target="_blank" rel="noopener" aria-label="WhatsApp">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-crisp-white mb-4">NAVIGARE</h5>
+<a class="text-muted-gray font-label-caps hover:text-crisp-white transition-colors" href="interior.html">Interior</a>
+<a class="text-muted-gray font-label-caps hover:text-crisp-white transition-colors" href="exterior.html">Exterior</a>
+<a class="text-muted-gray font-label-caps hover:text-crisp-white transition-colors" href="contact.html">Despre noi</a>
+<a class="text-muted-gray font-label-caps hover:text-crisp-white transition-colors" href="https://tractari.elsarova.ro">TRACTĂRI</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-crisp-white mb-4">CONTACT</h5>
+<p class="text-muted-gray font-body-md">Strada Universității 28A<br/>Suceava, România</p>
+<p class="text-muted-gray font-body-md"><a href="tel:0744350851" class="hover:text-crisp-white transition-colors">0744 350 851</a></p>
+<p class="text-muted-gray font-body-md"><a href="mailto:elsarova@gmail.com" class="hover:text-crisp-white transition-colors">elsarova@gmail.com</a></p>
+</div>
+</div>
+<div class="px-margin-desktop max-w-container-max mx-auto mt-20 pt-8 border-t border-crisp-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-muted-gray font-label-caps text-[10px]">© 2025 ELSAROVA. TOATE DREPTURILE REZERVATE.</p>
+<div class="flex gap-8">
+<a class="font-label-caps text-muted-gray text-[10px] hover:text-crisp-white" href="#">CONFIDENȚIALITATE</a>
+<a class="font-label-caps text-muted-gray text-[10px] hover:text-crisp-white" href="#">TERMENI ȘI CONDIȚII</a>
+</div>
+</div>
+</footer>
+<script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.editorial-image-reveal').forEach(el => observer.observe(el));
+
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-6');
+            } else {
+                nav.classList.add('py-6');
+                nav.classList.remove('py-4');
+            }
+        });
+    </script>
+</body></html>
