@@ -123,6 +123,21 @@
         .product-card-hover:hover img {
             transform: scale(1.05);
         }
+        .img-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1C1D21 0%, #121317 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img-placeholder::after {
+            content: 'photo_camera';
+            font-family: 'Material Symbols Outlined';
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 48;
+            font-size: 56px;
+            color: rgba(255,255,255,0.06);
+        }
     </style>
 </head>
 <body class="font-body-md text-body-md">
@@ -132,13 +147,25 @@
 <div class="hidden md:flex items-center gap-10">
 <a class="text-crisp-white font-label-caps hover:text-signature-red transition-colors duration-300" href="interior.html">Interior</a>
 <a class="text-signature-red border-b border-signature-red pb-1 font-label-caps" href="exterior.html">Exterior</a>
+<a class="text-crisp-white font-label-caps hover:text-signature-red transition-colors duration-300" href="galerie.html">Galerie</a>
 <a class="text-crisp-white font-label-caps hover:text-signature-red transition-colors duration-300" href="contact.html">Despre noi</a>
 <a class="text-signature-red font-label-caps hover:text-crisp-white transition-colors duration-300" href="https://tractari.elsarova.ro" target="_blank">Tractări</a>
 </div>
 <a href="tel:0744350851" class="hidden md:block bg-crisp-white text-onyx-base px-6 py-2 font-label-caps hover:bg-signature-red hover:text-crisp-white transition-colors duration-300">0744 350 851</a>
-<button class="md:hidden text-crisp-white"><span class="material-symbols-outlined">menu</span></button>
+<button data-menu-btn class="md:hidden text-crisp-white p-1"><span class="material-symbols-outlined text-3xl">menu</span></button>
 </div>
 </nav>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-onyx-base/98 backdrop-blur-xl flex-col items-center justify-center gap-8">
+<button id="mobile-close" class="absolute top-6 right-6 text-crisp-white p-1"><span class="material-symbols-outlined text-3xl">close</span></button>
+<a class="font-label-caps text-xl text-crisp-white hover:text-signature-red transition-colors tracking-widest" href="index.html">ACASĂ</a>
+<a class="font-label-caps text-xl text-crisp-white hover:text-signature-red transition-colors tracking-widest" href="interior.html">INTERIOR</a>
+<a class="font-label-caps text-xl text-signature-red border-b border-signature-red pb-1 tracking-widest" href="exterior.html">EXTERIOR</a>
+<a class="font-label-caps text-xl text-crisp-white hover:text-signature-red transition-colors tracking-widest" href="galerie.html">GALERIE</a>
+<a class="font-label-caps text-xl text-crisp-white hover:text-signature-red transition-colors tracking-widest" href="contact.html">DESPRE NOI</a>
+<a class="font-label-caps text-xl text-signature-red tracking-widest" href="https://tractari.elsarova.ro" target="_blank">TRACTĂRI</a>
+<a class="mt-4 bg-signature-red text-crisp-white px-10 py-4 font-label-caps text-xl tracking-widest" href="tel:0744350851">0744 350 851</a>
+</div>
 <main class="pt-32">
 <section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
@@ -160,7 +187,7 @@
 </div>
 </div>
 <div class="md:col-span-6 lg:col-span-7 order-1 md:order-2 relative h-[500px] md:h-[700px] bg-onyx-surface overflow-hidden group">
-<img alt="Corp de iluminat pentru fatada exterioara" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uh53IcwlVX7sQzo3li3dWCvn46Pvhp8yE834VyuFSLeIZcEa1xFPnXs9hSZrWzyKbeLx0JEXjVnhV8tMwSLQM_hLbpeUdFCy3WlwHHLB2i0u7T5Seq9JMDFPsrTOrpYHU21mWtSAC4XPRFDm9VYMSu8MGC3rJ0Fw5ALpaV5nc7cY7ATauaGslzpIoSBof7BPYt816Cz3zqbXDQwU9fyCeHhaVpBbKiEqmxelcLB0vX8VJBbsJ3qWFOUqZY"/>
+<div class="img-placeholder w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-700" data-photo="assets/exterior-hero.jpg"></div>
 <div class="absolute bottom-8 right-8 bg-onyx-base/80 backdrop-blur-md border border-crisp-white/10 p-6 max-w-xs">
 <p class="font-label-caps text-signature-red mb-2">FAEDO III SERIES</p>
 <p class="text-sm text-muted-gray">Clasa IP65. Corp din aluminiu turnat sub presiune pentru medii extreme.</p>
@@ -180,7 +207,7 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div class="md:col-span-8 group relative overflow-hidden bg-onyx-surface h-[600px] product-card-hover">
-<img alt="Stalp de iluminat exterior" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ug0yx0M5wNIuGXMeBD28m93_gQc3jnFkfIl0TwvhU1W9O6IkT1F8rdjYPJR65hgNTtBe4-sehwsNa8i5_T0PX5oJr4D6JbTDlKk8prG_TvOUayr8x3MywvsjO4USeuFsrUvpedgxOZsYo9AtVlo1MFTEXgqJakU9PtF2pCGXqCa_yiINVVnRlBa71EXYj8DbCXSetrc6HUg8My2fm_rxgQYUi2_V9sGnTJPkYdl5WGRoa1jgE4fRZlqjyg"/>
+<div class="img-placeholder w-full h-full" data-photo="assets/exterior-bollard.jpg"></div>
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-base to-transparent opacity-60"></div>
 <div class="absolute bottom-10 left-10">
 <h3 class="font-headline-md text-headline-md text-crisp-white mb-2">PARK 4 BOLLARD</h3>
@@ -189,14 +216,14 @@
 </div>
 <div class="md:col-span-4 flex flex-col gap-8">
 <div class="flex-1 group relative overflow-hidden bg-onyx-surface product-card-hover">
-<img alt="Corp de iluminat exterior montat pe perete" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uikKvbV54Wue3KRuIuOEQPQnXH5UC3XnToh4N7pjt_LMStCyXBxUhRLckndik5xpIna7QO6ZW2T1bY29AwkOlOfAXJKJi72L9U8rA8diqC6NoV-2ZpHRtD2oP-VLM06QNqB7gBUx36ARM29qA_4dbpCcII710OF81m-7vD5QFCGjeanmCQFhE3gXQnKCRhlGRmPkiaG7LYwvQg035lyPUtDPsI5xcPTqgKUMSXhebZXJQsERWkdeOE-oxNd"/>
+<div class="img-placeholder w-full h-full" data-photo="assets/exterior-chiappera.jpg"></div>
 <div class="absolute inset-0 bg-onyx-base/20 group-hover:bg-transparent transition-all"></div>
 <div class="absolute bottom-6 left-6">
 <p class="font-label-caps text-crisp-white">CHIAPPERA</p>
 </div>
 </div>
 <div class="flex-1 group relative overflow-hidden bg-onyx-surface product-card-hover">
-<img alt="Bec decorativ exterior" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uivtgYbVtcZiR-VT2o-1ry5rTnvFuRlwI1XNa_OPV99PvXbUGHdWNqEdBFSGkrM6ZGsKFe21iNem1KcgLcsX81LULbaUWRpsewYLLE5PPz--2GGDSnUlA43Pv_J0V5xz98a392RnQjbI0fqmMLY-uIuQR9bYLGhwx1De9ws-Tt8vpWmoT5SJwyQPraU3OKJCG_Zk-mpDF2DxlkskwuU6zX_rzxfSmqA2utlpQXIdO09GxLH7rNrU5PW_oE"/>
+<div class="img-placeholder w-full h-full" data-photo="assets/exterior-vignanello.jpg"></div>
 <div class="absolute inset-0 bg-onyx-base/20 group-hover:bg-transparent transition-all"></div>
 <div class="absolute bottom-6 left-6">
 <p class="font-label-caps text-crisp-white">VIGNANELLO</p>
@@ -239,16 +266,16 @@
 </div>
 <div class="grid grid-cols-2 gap-4 h-[600px]">
 <div class="bg-onyx-base border border-crisp-white/10 flex items-center justify-center relative overflow-hidden group">
-<img alt="Detaliu material" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0ug0yx0M5wNIuGXMeBD28m93_gQc3jnFkfIl0TwvhU1W9O6IkT1F8rdjYPJR65hgNTtBe4-sehwsNa8i5_T0PX5oJr4D6JbTDlKk8prG_TvOUayr8x3MywvsjO4USeuFsrUvpedgxOZsYo9AtVlo1MFTEXgqJakU9PtF2pCGXqCa_yiINVVnRlBa71EXYj8DbCXSetrc6HUg8My2fm_rxgQYUi2_V9sGnTJPkYdl5WGRoa1jgE4fRZlqjyg"/>
+<div class="img-placeholder w-full h-full" data-photo="assets/exterior-detail-1.jpg"></div>
 </div>
 <div class="bg-onyx-base border border-crisp-white/10 flex items-center justify-center relative overflow-hidden group mt-12">
-<img alt="Detaliu produs" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uikKvbV54Wue3KRuIuOEQPQnXH5UC3XnToh4N7pjt_LMStCyXBxUhRLckndik5xpIna7QO6ZW2T1bY29AwkOlOfAXJKJi72L9U8rA8diqC6NoV-2ZpHRtD2oP-VLM06QNqB7gBUx36ARM29qA_4dbpCcII710OF81m-7vD5QFCGjeanmCQFhE3gXQnKCRhlGRmPkiaG7LYwvQg035lyPUtDPsI5xcPTqgKUMSXhebZXJQsERWkdeOE-oxNd"/>
+<div class="img-placeholder w-full h-full" data-photo="assets/exterior-detail-2.jpg"></div>
 </div>
 <div class="bg-onyx-base border border-crisp-white/10 flex items-center justify-center relative overflow-hidden group -mt-12">
-<img alt="Detaliu instalare" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uh53IcwlVX7sQzo3li3dWCvn46Pvhp8yE834VyuFSLeIZcEa1xFPnXs9hSZrWzyKbeLx0JEXjVnhV8tMwSLQM_hLbpeUdFCy3WlwHHLB2i0u7T5Seq9JMDFPsrTOrpYHU21mWtSAC4XPRFDm9VYMSu8MGC3rJ0Fw5ALpaV5nc7cY7ATauaGslzpIoSBof7BPYt816Cz3zqbXDQwU9fyCeHhaVpBbKiEqmxelcLB0vX8VJBbsJ3qWFOUqZY"/>
+<div class="img-placeholder w-full h-full" data-photo="assets/exterior-detail-3.jpg"></div>
 </div>
 <div class="bg-onyx-base border border-crisp-white/10 flex items-center justify-center relative overflow-hidden group">
-<img alt="Detaliu sticla" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uivtgYbVtcZiR-VT2o-1ry5rTnvFuRlwI1XNa_OPV99PvXbUGHdWNqEdBFSGkrM6ZGsKFe21iNem1KcgLcsX81LULbaUWRpsewYLLE5PPz--2GGDSnUlA43Pv_J0V5xz98a392RnQjbI0fqmMLY-uIuQR9bYLGhwx1De9ws-Tt8vpWmoT5SJwyQPraU3OKJCG_Zk-mpDF2DxlkskwuU6zX_rzxfSmqA2utlpQXIdO09GxLH7rNrU5PW_oE"/>
+<div class="img-placeholder w-full h-full" data-photo="assets/exterior-detail-4.jpg"></div>
 </div>
 </div>
 </div>
@@ -293,6 +320,7 @@
 <h5 class="font-label-caps text-crisp-white mb-4">NAVIGARE</h5>
 <a class="text-muted-gray font-label-caps hover:text-crisp-white transition-colors" href="interior.html">Interior</a>
 <a class="text-muted-gray font-label-caps hover:text-crisp-white transition-colors" href="exterior.html">Exterior</a>
+<a class="text-muted-gray font-label-caps hover:text-crisp-white transition-colors" href="galerie.html">Galerie</a>
 <a class="text-muted-gray font-label-caps hover:text-crisp-white transition-colors" href="contact.html">Despre noi</a>
 <a class="text-muted-gray font-label-caps hover:text-crisp-white transition-colors" href="https://tractari.elsarova.ro">TRACTĂRI</a>
 </div>
@@ -316,5 +344,13 @@
             const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
             const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
         });
+        // Mobile menu
+        (function(){
+            var btn=document.querySelector('[data-menu-btn]');
+            var menu=document.getElementById('mobile-menu');
+            var close=document.getElementById('mobile-close');
+            if(btn&&menu){btn.addEventListener('click',function(){menu.classList.remove('hidden');menu.classList.add('flex');})}
+            if(close&&menu){close.addEventListener('click',function(){menu.classList.add('hidden');menu.classList.remove('flex');})}
+        })();
     </script>
 </body></html>

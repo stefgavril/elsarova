@@ -24,6 +24,21 @@
         .text-shadow-hero {
             text-shadow: 0 4px 20px rgba(0,0,0,0.5);
         }
+        .img-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1C1D21 0%, #121317 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img-placeholder::after {
+            content: 'photo_camera';
+            font-family: 'Material Symbols Outlined';
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 48;
+            font-size: 56px;
+            color: rgba(255,255,255,0.06);
+        }
     </style>
 <script id="tailwind-config">
         tailwind.config = {
@@ -130,17 +145,31 @@
 <div class="hidden md:flex items-center gap-12">
 <a class="text-crisp-white font-label-caps hover:text-signature-red transition-colors duration-300" href="interior.html">Interior</a>
 <a class="text-crisp-white font-label-caps hover:text-signature-red transition-colors duration-300" href="exterior.html">Exterior</a>
+<a class="text-crisp-white font-label-caps hover:text-signature-red transition-colors duration-300" href="galerie.html">Galerie</a>
 <a class="text-crisp-white font-label-caps hover:text-signature-red transition-colors duration-300" href="contact.html">Despre noi</a>
 <a class="text-signature-red font-label-caps hover:text-crisp-white transition-colors duration-300" href="https://tractari.elsarova.ro" target="_blank">Tractări</a>
 </div>
-<a href="tel:0744350851" class="bg-crisp-white text-onyx-base px-6 py-2 font-label-caps hover:bg-signature-red hover:text-crisp-white transition-colors duration-300">0744 350 851</a>
+<div class="flex items-center gap-3">
+<a href="tel:0744350851" class="hidden md:block bg-crisp-white text-onyx-base px-6 py-2 font-label-caps hover:bg-signature-red hover:text-crisp-white transition-colors duration-300">0744 350 851</a>
+<button data-menu-btn class="md:hidden text-crisp-white p-1"><span class="material-symbols-outlined text-3xl">menu</span></button>
+</div>
 </div>
 </nav>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-onyx-base/98 backdrop-blur-xl flex-col items-center justify-center gap-8">
+<button id="mobile-close" class="absolute top-6 right-6 text-crisp-white p-1"><span class="material-symbols-outlined text-3xl">close</span></button>
+<a class="font-label-caps text-xl text-crisp-white hover:text-signature-red transition-colors tracking-widest" href="interior.html">INTERIOR</a>
+<a class="font-label-caps text-xl text-crisp-white hover:text-signature-red transition-colors tracking-widest" href="exterior.html">EXTERIOR</a>
+<a class="font-label-caps text-xl text-crisp-white hover:text-signature-red transition-colors tracking-widest" href="galerie.html">GALERIE</a>
+<a class="font-label-caps text-xl text-crisp-white hover:text-signature-red transition-colors tracking-widest" href="contact.html">DESPRE NOI</a>
+<a class="font-label-caps text-xl text-signature-red tracking-widest" href="https://tractari.elsarova.ro" target="_blank">TRACTĂRI</a>
+<a class="mt-4 bg-signature-red text-crisp-white px-10 py-4 font-label-caps text-xl tracking-widest" href="tel:0744350851">0744 350 851</a>
+</div>
 <!-- Hero Section -->
 <header class="relative h-screen flex items-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-black/40 z-10"></div>
-<img alt="Architectural Lighting Showcase" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ugDwiZJO6JYYE4lYEqsCWviY-JOAdrLgARMLLQ1yQg0J_MxbVjGd3vza15H8JaNvsxeB7RE-vzavl4AzVkt9rhM52XeMzV8dvRksNn0x-ZBtzoyOa097MpcnZKwzNvS80F96k67GWNS9CbXFHCCjWyKWvoxyGxp_8zsMO0BAqCCy0zPrB3WNRQT9ElwwXvThqlJvebimD6GFEuDvSLfHcC0bobDL8hS4mQzbfoP2oY49_TeHTYN_OICjMPt"/>
+<div class="absolute inset-0 z-0 bg-gradient-to-br from-[#2a0e0c] via-[#1a0a08] to-[#121317]">
+<div class="absolute inset-0 bg-black/30 z-10"></div>
+<!-- TODO: replace with real hero image: <img class="w-full h-full object-cover" src="assets/hero.jpg" /> -->
 </div>
 <div class="relative z-20 px-margin-desktop max-w-container-max mx-auto w-full">
 <div class="max-w-3xl">
@@ -148,8 +177,8 @@
 <h1 class="font-display-lg text-display-lg md:text-display-lg text-headline-lg-mobile text-crisp-white mb-8 text-shadow-hero">Arta Iluminatului.</h1>
 <p class="font-body-lg text-body-lg text-crisp-white/90 mb-12 max-w-xl">Unde precizia industrială întâlnește luxul arhitectural. Creăm experiențe luminoase care definesc spațiile și elevează momentele.</p>
 <div class="flex gap-6">
-<button class="bg-crisp-white text-onyx-base px-10 py-5 font-label-caps hover:bg-signature-red hover:text-crisp-white transition-all duration-300 scale-100 active:scale-95">Descoperă Interior</button>
-<button class="border border-crisp-white text-crisp-white px-10 py-5 font-label-caps hover:border-signature-red hover:text-signature-red transition-all duration-300 scale-100 active:scale-95">Vezi Proiecte</button>
+<a href="interior.html" class="inline-block bg-crisp-white text-onyx-base px-10 py-5 font-label-caps hover:bg-signature-red hover:text-crisp-white transition-all duration-300 active:scale-95">Descoperă Interior</a>
+<a href="galerie.html" class="inline-block border border-crisp-white text-crisp-white px-10 py-5 font-label-caps hover:border-signature-red hover:text-signature-red transition-all duration-300 active:scale-95">Vezi Proiecte</a>
 </div>
 </div>
 </div>
@@ -177,10 +206,10 @@
 </div>
 <div class="md:col-span-7 order-1 md:order-2 grid grid-cols-2 gap-gutter">
 <div class="aspect-square overflow-hidden bg-onyx-surface group">
-<img alt="Lustra Eglo Romazzina" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0ujh4N393UWiGrQWj2yXlEQ14I-X9fciGob3SuUHrBe_bEGyjnkjI25i3P_i4WJHf4y0vjnUIICQegQAQ8ZlAjClBru_6oG07Oo8buCsHqfZS_Q0zhiX6sP0PNVpmHDtR8PmyIEBL48tPNzkrsbX2PaFuA2bbTtYCn09F7pC2a7ozWhIzZ3istTyOToITDeoXJZi_LDhxfcPCZQqcR2ytKU2V6FpzWhbKfUBV2JJ1JhzsaDHu32AQxGEfgJR"/>
+<div class="img-placeholder w-full h-full transition-transform duration-700 group-hover:scale-110" data-photo="assets/interior-produs-1.jpg"></div>
 </div>
 <div class="aspect-square overflow-hidden bg-onyx-surface group mt-12">
-<img alt="Pendul Eglo Encinitos" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uildLrOhXTxYu9lnOuJevg4YS99mltHLbM2c2YX-gQ4LH9b3XURQmylJoFeyGQUHY4fWdetfA2cLEka_gPsMvr7zzS0RPcn7NSOJfYFdDO5AyrThgcQl29X4LnfeqfdVf2N084Spx4iKyTB5rJWPxCxIzj_zMR6OTo50cGuoibVNh8NzsX7hd00zHkbaWYEqYmL76H6fS3Aqfr6rzyxdMkSdiRT3z5ZdDyRjPMf0mjxO25Zh-q6wZWAEytV"/>
+<div class="img-placeholder w-full h-full transition-transform duration-700 group-hover:scale-110" data-photo="assets/interior-produs-2.jpg"></div>
 </div>
 </div>
 </div>
@@ -203,7 +232,7 @@
 <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
 <div class="md:col-span-8 overflow-hidden">
 <div class="relative group aspect-[16/9]">
-<img alt="Exterior Lighting Design Faedo" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uh53IcwlVX7sQzo3li3dWCvn46Pvhp8yE834VyuFSLeIZcEa1xFPnXs9hSZrWzyKbeLx0JEXjVnhV8tMwSLQM_hLbpeUdFCy3WlwHHLB2i0u7T5Seq9JMDFPsrTOrpYHU21mWtSAC4XPRFDm9VYMSu8MGC3rJ0Fw5ALpaV5nc7cY7ATauaGslzpIoSBof7BPYt816Cz3zqbXDQwU9fyCeHhaVpBbKiEqmxelcLB0vX8VJBbsJ3qWFOUqZY"/>
+<div class="img-placeholder w-full h-full transition-transform duration-1000 group-hover:scale-105" data-photo="assets/exterior-produs-1.jpg"></div>
 <div class="absolute bottom-8 left-8">
 <span class="font-label-caps text-crisp-white bg-signature-red px-4 py-2">Faedo Series</span>
 </div>
@@ -257,6 +286,7 @@
 <nav class="flex flex-col gap-2">
 <a class="font-label-caps text-muted-gray hover:text-crisp-white transition-colors" href="interior.html">Interior</a>
 <a class="font-label-caps text-muted-gray hover:text-crisp-white transition-colors" href="exterior.html">Exterior</a>
+<a class="font-label-caps text-muted-gray hover:text-crisp-white transition-colors" href="galerie.html">Galerie</a>
 <a class="font-label-caps text-muted-gray hover:text-crisp-white transition-colors" href="contact.html">Despre noi</a>
 </nav>
 </div>
@@ -320,5 +350,14 @@
                 });
             });
         });
+
+        // Mobile menu
+        (function(){
+            var btn=document.querySelector('[data-menu-btn]');
+            var menu=document.getElementById('mobile-menu');
+            var close=document.getElementById('mobile-close');
+            if(btn&&menu){btn.addEventListener('click',function(){menu.classList.remove('hidden');menu.classList.add('flex');})}
+            if(close&&menu){close.addEventListener('click',function(){menu.classList.add('hidden');menu.classList.remove('flex');})}
+        })();
     </script>
 </body></html>

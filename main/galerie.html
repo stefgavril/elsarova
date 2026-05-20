@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="dark" lang="ro"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Galerie | ELSAROVA – Corpuri de Iluminat Suceava</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "signature-red": "#E31E24",
+        "onyx-base": "#121317",
+        "onyx-surface": "#1C1D21",
+        "crisp-white": "#FFFFFF",
+        "muted-gray": "#808080",
+        "surface": "#200f0d",
+        "background": "#121317"
+      },
+      spacing: {
+        "section-gap": "120px",
+        "margin-desktop": "64px",
+        "margin-mobile": "20px",
+        "gutter": "16px",
+        "container-max": "1440px"
+      },
+      fontFamily: {
+        "display-lg": ["Manrope"],
+        "headline-lg": ["Manrope"],
+        "headline-md": ["Manrope"],
+        "body-md": ["Manrope"],
+        "label-caps": ["Manrope"]
+      },
+      fontSize: {
+        "display-lg": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+        "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+        "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700"}]
+      }
+    }
+  }
+}
+</script>
+<style>
+body { background-color: #121317; color: #FFFFFF; -webkit-font-smoothing: antialiased; }
+.glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.img-placeholder { width: 100%; height: 100%; background: linear-gradient(135deg, #1C1D21 0%, #121317 100%); display: flex; align-items: center; justify-content: center; }
+.img-placeholder::after { content: 'photo_camera'; font-family: 'Material Symbols Outlined'; font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 48; font-size: 48px; color: rgba(255,255,255,0.06); }
+</style>
+</head>
+<body class="overflow-x-hidden">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-crisp-white/10">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold tracking-tighter text-crisp-white" href="index.html">ELSAROVA</a>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-crisp-white font-label-caps hover:text-signature-red transition-colors duration-300" href="interior.html">Interior</a>
+<a class="text-crisp-white font-label-caps hover:text-signature-red transition-colors duration-300" href="exterior.html">Exterior</a>
+<a class="text-signature-red border-b border-signature-red pb-1 font-label-caps" href="galerie.html">Galerie</a>
+<a class="text-crisp-white font-label-caps hover:text-signature-red transition-colors duration-300" href="contact.html">Despre noi</a>
+<a class="text-signature-red font-label-caps hover:text-crisp-white transition-colors duration-300" href="https://tractari.elsarova.ro" target="_blank">Tractări</a>
+</div>
+<div class="flex items-center gap-3">
+<a href="tel:0744350851" class="hidden md:block bg-crisp-white text-onyx-base px-6 py-2 font-label-caps hover:bg-signature-red hover:text-crisp-white transition-colors duration-300">0744 350 851</a>
+<button data-menu-btn class="md:hidden text-crisp-white p-1"><span class="material-symbols-outlined text-3xl">menu</span></button>
+</div>
+</div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-onyx-base/98 backdrop-blur-xl flex-col items-center justify-center gap-8">
+<button id="mobile-close" class="absolute top-6 right-6 text-crisp-white p-1"><span class="material-symbols-outlined text-3xl">close</span></button>
+<a class="font-label-caps text-xl text-crisp-white hover:text-signature-red transition-colors tracking-widest" href="index.html">ACASĂ</a>
+<a class="font-label-caps text-xl text-crisp-white hover:text-signature-red transition-colors tracking-widest" href="interior.html">INTERIOR</a>
+<a class="font-label-caps text-xl text-crisp-white hover:text-signature-red transition-colors tracking-widest" href="exterior.html">EXTERIOR</a>
+<a class="font-label-caps text-xl text-signature-red border-b border-signature-red pb-1 tracking-widest" href="galerie.html">GALERIE</a>
+<a class="font-label-caps text-xl text-crisp-white hover:text-signature-red transition-colors tracking-widest" href="contact.html">DESPRE NOI</a>
+<a class="font-label-caps text-xl text-signature-red tracking-widest" href="https://tractari.elsarova.ro" target="_blank">TRACTĂRI</a>
+<a class="mt-4 bg-signature-red text-crisp-white px-10 py-4 font-label-caps text-xl tracking-widest" href="tel:0744350851">0744 350 851</a>
+</div>
+
+<!-- Page Header -->
+<header class="pt-40 pb-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<span class="font-label-caps text-signature-red tracking-widest mb-4 block">Colecții & Proiecte</span>
+<h1 class="font-display-lg text-[48px] md:text-display-lg text-crisp-white leading-tight mb-6">GALERIE<br/><span class="text-muted-gray font-label-caps text-[16px] tracking-widest">ELSAROVA</span></h1>
+<div class="w-24 h-1 bg-signature-red"></div>
+</header>
+
+<!-- Section 1: Interior -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="flex items-baseline gap-8 mb-12 border-b border-crisp-white/10 pb-6">
+<h2 class="font-headline-md text-[28px] text-crisp-white uppercase tracking-tight">Iluminat Interior</h2>
+<span class="font-label-caps text-muted-gray">LUSTRE · PENDULE · APLICE · SPOTURI</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/interior-1.jpg"></div></div>
+<div class="aspect-[3/4] overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/interior-2.jpg"></div></div>
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/interior-3.jpg"></div></div>
+<div class="aspect-[3/4] overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/interior-4.jpg"></div></div>
+<div class="aspect-[4/3] overflow-hidden group cursor-pointer md:col-span-2"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/interior-5.jpg"></div></div>
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/interior-6.jpg"></div></div>
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/interior-7.jpg"></div></div>
+<div class="aspect-[3/4] overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/interior-8.jpg"></div></div>
+</div>
+</section>
+
+<!-- Section 2: Exterior -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="flex items-baseline gap-8 mb-12 border-b border-crisp-white/10 pb-6">
+<h2 class="font-headline-md text-[28px] text-crisp-white uppercase tracking-tight">Iluminat Exterior</h2>
+<span class="font-label-caps text-muted-gray">STÂLPI · APLICE · PROIECTOARE · BOLLARD</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+<div class="aspect-[3/4] overflow-hidden group cursor-pointer md:col-span-2 md:row-span-2"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/exterior-1.jpg"></div></div>
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/exterior-2.jpg"></div></div>
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/exterior-3.jpg"></div></div>
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/exterior-4.jpg"></div></div>
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/exterior-5.jpg"></div></div>
+<div class="aspect-[4/3] overflow-hidden group cursor-pointer md:col-span-2"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/exterior-6.jpg"></div></div>
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/exterior-7.jpg"></div></div>
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/exterior-8.jpg"></div></div>
+</div>
+</section>
+
+<!-- Section 3: Showroom -->
+<section class="bg-onyx-surface py-section-gap mb-section-gap">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-baseline gap-8 mb-12 border-b border-crisp-white/10 pb-6">
+<h2 class="font-headline-md text-[28px] text-crisp-white uppercase tracking-tight">Showroom Suceava</h2>
+<span class="font-label-caps text-muted-gray">STRADA UNIVERSITĂȚII 28A</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+<div class="aspect-[4/3] overflow-hidden group cursor-pointer md:col-span-2"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/showroom-1.jpg"></div></div>
+<div class="aspect-[3/4] overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/showroom-2.jpg"></div></div>
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/showroom-3.jpg"></div></div>
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/showroom-4.jpg"></div></div>
+<div class="aspect-[4/3] overflow-hidden group cursor-pointer md:col-span-2"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/showroom-5.jpg"></div></div>
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/showroom-6.jpg"></div></div>
+</div>
+</div>
+</section>
+
+<!-- Section 4: Proiecte Realizate -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="flex items-baseline gap-8 mb-12 border-b border-crisp-white/10 pb-6">
+<h2 class="font-headline-md text-[28px] text-crisp-white uppercase tracking-tight">Proiecte Realizate</h2>
+<span class="font-label-caps text-muted-gray">INSTALĂRI LA CLIENȚI</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/proiect-1.jpg"></div></div>
+<div class="aspect-[3/4] overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/proiect-2.jpg"></div></div>
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/proiect-3.jpg"></div></div>
+<div class="aspect-[4/3] overflow-hidden group cursor-pointer md:col-span-2"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/proiect-4.jpg"></div></div>
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/proiect-5.jpg"></div></div>
+<div class="aspect-square overflow-hidden group cursor-pointer"><div class="img-placeholder w-full h-full group-hover:scale-105 transition-transform duration-500" data-photo="assets/proiect-6.jpg"></div></div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="bg-onyx-surface py-24 text-center mb-0">
+<span class="font-label-caps text-signature-red tracking-widest mb-4 block">Vrei să lucrăm împreună?</span>
+<h2 class="font-headline-md text-[36px] text-crisp-white mb-8">Solicită o ofertă personalizată</h2>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="contact.html" class="inline-block bg-signature-red text-crisp-white px-12 py-5 font-label-caps hover:brightness-110 transition-all tracking-widest">CONTACTEAZĂ-NE</a>
+<a href="tel:0744350851" class="inline-block border border-crisp-white/30 text-crisp-white px-12 py-5 font-label-caps hover:border-signature-red hover:text-signature-red transition-all tracking-widest">0744 350 851</a>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-onyx-surface w-full py-20 border-t border-crisp-white/10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-6">
+<h3 class="font-headline-md text-headline-md text-crisp-white font-bold">ELSAROVA</h3>
+<p class="font-body-md text-body-md text-muted-gray max-w-xs">Magazin de corpuri de iluminat și materiale electrice din Suceava.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-crisp-white/20 flex items-center justify-center hover:border-signature-red hover:text-signature-red transition-colors" href="https://www.facebook.com/profile.php?id=100063795933042" target="_blank" rel="noopener" aria-label="Facebook"><span class="material-symbols-outlined text-[18px]">share</span></a>
+<a class="w-10 h-10 border border-crisp-white/20 flex items-center justify-center hover:border-[#25D366] hover:text-[#25D366] transition-colors" href="https://wa.me/40744350851" target="_blank" rel="noopener" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<span class="font-label-caps text-crisp-white opacity-40">Secțiuni</span>
+<nav class="flex flex-col gap-2">
+<a class="font-label-caps text-muted-gray hover:text-crisp-white transition-colors" href="interior.html">Interior</a>
+<a class="font-label-caps text-muted-gray hover:text-crisp-white transition-colors" href="exterior.html">Exterior</a>
+<a class="font-label-caps text-muted-gray hover:text-crisp-white transition-colors" href="galerie.html">Galerie</a>
+<a class="font-label-caps text-muted-gray hover:text-crisp-white transition-colors" href="contact.html">Despre noi</a>
+</nav>
+</div>
+<div class="space-y-4">
+<span class="font-label-caps text-crisp-white opacity-40">Alte pagini</span>
+<nav class="flex flex-col gap-2">
+<a class="font-label-caps text-muted-gray hover:text-signature-red transition-colors" href="https://tractari.elsarova.ro">TRACTĂRI</a>
+</nav>
+</div>
+</div>
+<div class="space-y-6">
+<span class="font-label-caps text-crisp-white opacity-40">Contact</span>
+<p class="font-body-md text-muted-gray">Strada Universității 28A<br/>Suceava, România</p>
+<p class="font-headline-md text-[18px] text-crisp-white"><a href="tel:0744350851" class="hover:text-signature-red transition-colors">0744 350 851</a></p>
+<p class="font-body-md text-muted-gray"><a href="mailto:elsarova@gmail.com" class="hover:text-crisp-white transition-colors">elsarova@gmail.com</a></p>
+<p class="font-label-caps text-[10px] text-muted-gray tracking-[0.2em] pt-4">© 2025 ELSAROVA. TOATE DREPTURILE REZERVATE.</p>
+</div>
+</div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.querySelector('[data-menu-btn]');
+  var menu=document.getElementById('mobile-menu');
+  var close=document.getElementById('mobile-close');
+  if(btn&&menu){btn.addEventListener('click',function(){menu.classList.remove('hidden');menu.classList.add('flex');})}
+  if(close&&menu){close.addEventListener('click',function(){menu.classList.add('hidden');menu.classList.remove('flex');})}
+})();
+</script>
+</body></html>
