@@ -7,3 +7,10 @@ stitch_elsarova_website_redesign2.zip
 stitch_elsarova_website_redesign_romana.zip
 .DS_Store
 poze tractari/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
